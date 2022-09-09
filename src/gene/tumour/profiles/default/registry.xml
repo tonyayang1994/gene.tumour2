@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<registry>
+<!-- control panel-->
+   <records prefix="gene.tumour.interfaces.IGeneTumourSettings" 
+  	interface="gene.tumour.interfaces.IGeneTumourSettings">
+        <value key="sms_notify_enabled">False</value>
+        <value key="sms_notify_message"></value>
+	    <value key="email_notify_enabled">True</value>
+        <value key="record_expire_days">7</value>
+        <value key="record_expire_notify">ExpiredNotify</value>
+  </records> 
+
+  <records prefix="plone.resources/tumour-main"
+            interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+      <value key="js">++resource++gene.tumour/main.js</value>
+      <value key="css">
+        <element>++resource++mockup/datatables/pattern.datatables.less</element>
+        <element>++resource++gene.tumour/main.less</element>
+      </value>
+  </records>
+    <!-- Bundles -->
+  <records prefix="plone.bundles/gene-tumour-main"
+            interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+    <value key="depends">jqueryui</value>
+    <value key="resources">
+    <element>tumour-main</element> 
+    </value>
+    <value key="jscompilation">++resource++gene.tumour/main.min.js</value>
+    <value key="csscompilation">++resource++gene.tumour/main.min.css</value>
+    <value key="last_compilation">2020-04-07 00:00:00</value>
+    <value key="compile">True</value>
+    <value key="enabled">False</value>
+    <value key="stub_js_modules">
+        <element>jquery</element>
+    </value>
+  </records>
+</registry>

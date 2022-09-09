@@ -1,0 +1,67 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2014-08-01 16:16+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+
+#: gene/common/profiles/default/workflows/genetic_testing_workflow/definition.xml
+msgid "Submit for review"
+msgstr ""
+
+#: gene/common/profiles/default/workflows/genetic_testing_workflow/definition.xml
+msgid "Fallback private"
+msgstr ""
+
+#: gene/common/profiles/default/workflows/genetic_testing_workflow/definition.xml
+msgid "Experiment success"
+msgstr ""
+
+#: gene/common/profiles/default/workflows/genetic_testing_workflow/definition.xml
+msgid "Experiment failed"
+msgstr ""
+
+#: gene/common/profiles/default/workflows/genetic_testing_workflow/definition.xml
+msgid "Experiment abort"
+msgstr ""
+
+#: gene/tumour/browser/import.py
+msgid "Required input is missing."
+msgstr ""
+
+#: gene/tumour/browser/import.py
+msgid "Object is of wrong type."
+msgstr ""
+
+#: gene/tumour/browser/import.py
+msgid "Value is too big"
+msgstr ""
+
+#: gene/tumour/browser/import.py
+msgid "Constraint not satisfied"
+msgstr ""
+
+#: gene/tumour/browser/import.py
+msgid "Wrong contained type"
+msgstr ""
+
+#: gene/tumour/browser/import.py
+msgid "ValidationError"
+msgstr ""
+
+#: gene/tumour/browser/import.py
+msgid "Raised if the Validation process fails."
+msgstr ""

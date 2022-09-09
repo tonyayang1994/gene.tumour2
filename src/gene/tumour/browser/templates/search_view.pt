@@ -1,0 +1,563 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      lang="en"
+         metal:use-macro="context/main_template/macros/master"
+         i18n:domain="gene.tumour">
+<metal:block fill-slot="top_slot"
+         tal:define="dummy string:python:request.set('disable_border', 1);
+        disable_column_two python:request.set('disable_plone.rightcolumn', 1);
+        disable_column_one python:request.set('disable_plone.leftcolumn', 1);">
+</metal:block>
+<body>
+
+<metal:content-core fill-slot="body">
+    <div id="content">
+        <div id="content-core">
+        <div class="row" id="ajax-target" tal:attributes="data-ajax-url python:context.absolute_url() ">
+                <div class="col-md-5">
+
+                    <div id="form-searchbox" class="input-group has-feedback">
+                        <label class="control-label sr-only" for="form-SearchableText" i18n:translate="">Full-text
+                            search</label>
+                        <span id="form-SearchableHelp" tabindex="0"
+                              class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"
+                              role="button" data-toggle="popover"
+                              data-trigger="focus" title="Advanced search instructions"
+                              data-content="" i18n:attributes="title"></span>
+                        <input id="form-SearchableText" type="text" class="form-control"
+                               placeholder="Full-text search, Enter to submit"
+                               aria-label="..." aria-describedby="form-SearchableHelp"
+                                 i18n:attributes="placeholder">
+                        <div id="form-SearchField" class="input-group-btn" data-container="body">
+                            <span id="form-SearchableClear" data-for="form-SearchableText"
+                                  class="glyphicon glyphicon-remove form-control-feedback del_searchword"
+                                  aria-hidden="true"></span>
+                            <button type="button" aria-expanded="false" data-toggle="dropdown"
+                                    class="btn btn-default dropdown-toggle" data-submenu>
+                                <span id="form-SearchFieldTitle" i18n:translate="">All</span>
+                                <span class="caret"></span> <span class="sr-only">More fields</span></button>
+                            <ul role="menu" class="dropdown-menu">
+                                <li role="presentation"><a data-target="" href="#" i18n:translate="">All</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation"><a data-target="task_no" href="#" i18n:translate="">Task no</a>
+                                </li>
+                                <li role="presentation"><a data-target="sequencing_filename" href="#" i18n:translate="">Sequencing
+                                    filename</a>
+                                </li>
+                                <li role="presentation" class="divider"></li>
+                                <li class="dropdown-submenu">
+                                    <a tabindex="0" i18n:translate="">Steps</a>
+                                    <ul class="dropdown-menu">
+                                        <li role="presentation">
+                                            <a data-target="step1" href="#" i18n:translate="">Blood Sample</a></li>
+                                        <li role="presentation">
+                                            <a data-target="step2" href="#" i18n:translate="">NA Extraction</a></li>
+                                        <li role="presentation">
+                                            <a data-target="step3" href="#" i18n:translate="">Library Construction</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a data-target="step4" href="#" i18n:translate="">Computer Detecting</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a data-target="step5" href="#" i18n:translate="">Analysis Results</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a tabindex="0" i18n:translate="">Review state</a>
+                                    <ul class="dropdown-menu">
+                                        <li role="presentation"><a data-target="private" href="#" i18n:translate="">Private</a>
+                                        </li>
+                                        <li role="presentation"><a data-target="pending" href="#" i18n:translate="">Pending</a>
+                                        </li>
+                                        <li role="presentation"><a data-target="success" href="#" i18n:translate="">Success</a>
+                                        </li>
+                                        <li role="presentation"><a data-target="failed" href="#" i18n:translate="">Failed</a>
+                                        </li>
+                                        <li role="presentation"><a data-target="abort"
+                                                                   href="#" i18n:translate="">Abort</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <span tal:replace="structure context/@@authenticator/authenticator" />
+                    </div>
+                    <!-- /input-group -->
+                </div> 
+                <div class="col-md-7 text-right" id="datatable_info"></div>
+                
+            </div>
+            <div class="row">
+                <div class="col-md-12 form-date-range">
+                    
+                    <label for="form-date-from" class="hide">From</label>
+                    <span class="date-from">
+                    
+                    <input class="pat-pickadate" data-pat-pickadate="time:false" type="text" id="form-date-from" name="from"
+                                                   placeholder="start date" i18n:attributes="placeholder">
+                   </span>
+                    -
+                    <label for="form-date-to" class="hide">to</label>
+                    <span class="date-to"> 
+                    <input class="pat-pickadate" data-pat-pickadate="time:false" type="text" id="form-date-to" name="to"
+                                                  placeholder="end date" i18n:attributes="placeholder">
+                    </span>
+                    <div class="dropdown" id="form-SearchDate">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                            <span id="form-SearchDateTitle" i18n:translate="">Select time</span>
+                            <span class="caret"></span> <span class="sr-only">More dates</span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#"
+                                   data-target="" i18n:translate="">Select time</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#"
+                                   data-target="sampling_time" i18n:translate="">Sampling time</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#"
+                                   data-target="received_time" i18n:translate="">Received time</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#"
+                                   data-target="separation_time" i18n:translate="">Separation time</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#"
+                                   data-target="extraction_time" i18n:translate="">Extraction time</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#"
+                                   data-target="library_time" i18n:translate="">Library construction time</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#"
+                                   data-target="template_time" i18n:translate="">Template preparation time</a></li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#"
+                                   data-target="sequencing_time" i18n:translate="">Sequencing time</a></li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#"
+                                   data-target="created" i18n:translate="">Creation time</a></li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#"
+                                   data-target="modified" i18n:translate="">Modification time</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tooltip-SearchableText" class="hide">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4" i18n:translate="">1. Boolean expressions</div>
+                        <div class="col-md-4" i18n:translate="" i18n:attributes="title"
+                             title="A sequence of words without operators implies AND. A search for 'carpet python snakes' translates to 'carpet AND python AND snakes'.">
+                            AND, OR, NOT(synonym a -)
+                        </div>
+                        <div class="col-md-4">
+                            <code><span i18n:attributes="title"
+                                    title="This will search for all objects that contain both 'word1' and 'word2'. ">word1 AND word2</span>,
+                                <span i18n:attributes="title"
+                                        title="which would search for occurrences of 'word1' but would exclude documents which contain 'word2'.">word1 -word2</span></code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" i18n:translate="">2. Parentheses</div>
+                        <div class="col-md-4" i18n:attributes="title"
+                             title="Control search order with parenthetical expressions">( )
+                        </div>
+                        <div class="col-md-4"><code i18n:attributes="title"
+                                title="This will return objects containing 'word1' and 'word2' or just objects that contain the term 'word3'.">(word1
+                            AND word2) OR word3)</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" i18n:translate="">3. Wild cards</div>
+                        <div class="col-md-4" i18n:translate="" i18n:attributes="title"
+                             title="Note though that wild cards cannot be at the beginning of a search phrase. '?ope' is an illegal search term and will be ignored.">
+                            * zero or more character, ? one character
+                        </div>
+                        <div class="col-md-4"><code><span i18n:attributes="title"
+                                title="which returns all words that begin with 'Z'">Z*</span>,
+                            <span i18n:attributes="title"
+                                    title="which returns all words that begin with 'Zop' and have one more character - just like in a Un*x shell.">Zop?</span>,
+                            <span i18n:attributes="title"
+                                    title="Matches words that like 'oad' 'odd'">o?d</span>,
+                            <span i18n:attributes="title"
+                                    title="Matches words that like 'book' 'back'">b??k</span>,
+                            <span i18n:attributes="title"
+                                    title="Matches words that like 'apple' 'able'">a*le</span>,
+                            <span i18n:attributes="title"
+                                    title="Matches words that like 'seek' 'speed'">s*ee?</span></code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" i18n:translate="">4. Phrase search</div>
+                        <div class="col-md-4" i18n:attributes="title"
+                             title="Double-quoted text implies phrase search">" "
+                        </div>
+                        <div class="col-md-4">
+                            <code i18n:attributes="title"
+                                    title="will search for all occurrences of the phrase 'carpet python' or of the word 'frogs'">"carpet
+                                python" OR frogs</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" i18n:translate="">5. Mixed together</div>
+                        <div class="col-md-4"><code i18n:attributes="title"
+                                title="will return all objects that contain the terms 'bob' and 'uncle' but will not include any objects that contain words that start with 'Zoo' like 'Zoologist', 'Zoology', or 'Zoo' itself.">((bob
+                            AND uncle) AND NOT Zoo*)</code>
+                        </div>
+                        <div class="col-md-4"><code i18n:attributes="title"
+                                title="will return all objects which contain the word 'snakes' or 'frogs' but do not contain the phrase 'carpet python'.">snakes
+                            OR frogs -"carpet python"</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-7">
+                    <div class="btn-group" id="selectDropdown">
+                        <button class="btn btn-default" type="button"><span data-target="indicator"
+                                                                            class="glyphicon glyphicon-unchecked"></span>
+                        </button>
+                        <button aria-expanded="false" data-toggle="dropdown" class="btn btn-default dropdown-toggle"
+                                type="button"><span
+                                class="caret"></span> <span class="sr-only">Toggle Dropdown</span></button>
+                        <ul role="menu" class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+                            <li role="presentation"><a data-target="all" href="#" i18n:translate="">All</a></li>
+                            <li role="presentation"><a data-target="none" href="#" i18n:translate="">None</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a data-target="step1" href="#" i18n:translate="">Blood Sample</a>
+                            </li>
+                            <li role="presentation"><a data-target="step2" href="#" i18n:translate="">NA Extraction</a>
+                            </li>
+                            <li role="presentation"><a data-target="step3" href="#" i18n:translate="">
+                                Library Construction</a></li>
+                            <li role="presentation"><a data-target="step4" href="#" i18n:translate="">
+                                Computer Detecting</a></li>
+                            <li role="presentation"><a data-target="step5" href="#" i18n:translate="">
+                                Analysis Results</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a data-target="private" href="#" i18n:translate="">Private</a></li>
+                            <li role="presentation"><a data-target="pending" href="#" i18n:translate="">Pending</a></li>
+                            <li role="presentation"><a data-target="success" href="#" i18n:translate="">Success</a></li>
+                            <li role="presentation"><a data-target="failed" href="#" i18n:translate="">Failed</a></li>
+                            <li role="presentation"><a data-target="abort" href="#" i18n:translate="">Abort</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="analysisBtnGroup" class="btn-group" role="group" aria-label="...">
+
+                        <div class="btn-group">
+                            <button type="button" aria-expanded="false" data-toggle="dropdown"
+                                    class="btn btn-default dropdown-toggle"
+                                    title="Sample receiving" i18n:attributes="title">
+                                <span class="badge" style="background: #fe85e4;">1</span>
+                                <tal: i18n:translate="">Sample</tal:>
+                                <span class="caret"></span> <span class="sr-only">More Action</span></button>
+                            <ul role="menu" class="dropdown-menu">
+                                <li><a data-target="step1-import" href="#"><span
+                                        class="glyphicon glyphicon glyphicon-open-file"></span>
+                                    <tal: i18n:translate="">Import sample data</tal:>
+                                </a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li><a data-target="step1-add" href="#"><span
+                                        class="glyphicon glyphicon-plus-sign"></span>
+                                    <tal: i18n:translate="">Add sample data</tal:>
+                                </a></li>
+                                <li class="divider"></li>
+                                <li><a data-target="step1-edit" href="#"><span
+                                        class="glyphicon glyphicon glyphicon-edit"></span>
+                                    <tal: i18n:translate="">Edit sample data</tal:>
+                                </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-group">
+                            <button type="button" aria-expanded="false" data-toggle="dropdown"
+                                    class="btn btn-default dropdown-toggle"
+                                    title="NA Extraction" i18n:attributes="title">
+                                <span class="badge" style="background: #c072fc;">2</span>
+                                <tal: i18n:translate="">NA</tal:>
+                                <span class="caret"></span> <span class="sr-only">More Action</span></button>
+                            <ul role="menu" class="dropdown-menu">
+                                <li><a data-target="step2-import" href="#"><span
+                                        class="glyphicon glyphicon glyphicon-open-file"></span>
+                                    <tal: i18n:translate="">Import NA data</tal:>
+                                </a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li><a data-target="step2-add" href="#"><span
+                                        class="glyphicon glyphicon-plus-sign"></span>
+                                    <tal: i18n:translate="">Add NA data</tal:>
+                                </a></li>
+                                <li class="divider"></li>
+                                <li><a data-target="step2-edit" href="#"><span
+                                        class="glyphicon glyphicon glyphicon-edit"></span>
+                                    <tal: i18n:translate="">Edit NA data</tal:>
+                                </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-group">
+                            <button type="button" aria-expanded="false" data-toggle="dropdown"
+                                    class="btn btn-default dropdown-toggle"
+                                    title="Library Construction" i18n:attributes="title">
+                                <span class="badge" style="background: #83b5fa;">3</span>
+                                <tal: i18n:translate="">Library</tal:>
+                                <span class="caret"></span> <span class="sr-only">More Action</span></button>
+                            <ul role="menu" class="dropdown-menu">
+                                <li><a data-target="step3-import" href="#"><span
+                                        class="glyphicon glyphicon glyphicon-open-file"></span>
+                                    <tal: i18n:translate="">Import library data</tal:>
+                                </a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li><a data-target="step3-add" href="#"><span
+                                        class="glyphicon glyphicon-plus-sign"></span>
+                                    <tal: i18n:translate="">Add library data</tal:>
+                                </a></li>
+                                <li class="divider"></li>
+                                <li><a data-target="step3-edit" href="#"><span
+                                        class="glyphicon glyphicon glyphicon-edit"></span>
+                                    <tal: i18n:translate="">Edit library data</tal:>
+                                </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-group">
+                            <button type="button" aria-expanded="false" data-toggle="dropdown"
+                                    class="btn btn-default dropdown-toggle"
+                                    title="Computer Detecting" i18n:attributes="title">
+                                <span class="badge" style="background: #ddfc63;">4</span>
+                                <tal: i18n:translate="">Detecting</tal:>
+                                <span class="caret"></span> <span class="sr-only">More Action</span></button>
+                            <ul role="menu" class="dropdown-menu">
+                                <li><a data-target="step4-import" href="#"><span
+                                        class="glyphicon glyphicon glyphicon-open-file"></span>
+                                    <tal: i18n:translate="">Import detecting data</tal:>
+                                </a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li><a data-target="step4-add" href="#"><span
+                                        class="glyphicon glyphicon-plus-sign"></span>
+                                    <tal: i18n:translate="">Add detecting data</tal:>
+                                </a></li>
+                                <li class="divider"></li>
+                                <li><a data-target="step4-edit" href="#"><span
+                                        class="glyphicon glyphicon glyphicon-edit"></span>
+                                    <tal: i18n:translate="">Edit detecting data</tal:>
+                                </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-group">
+                            <button type="button" aria-expanded="false" data-toggle="dropdown"
+                                    class="btn btn-default dropdown-toggle"
+                                    title="Analysis Results" i18n:attributes="title">
+                                <span class="badge" style="background: #98fc54;">&nbsp;</span>
+                                <tal: i18n:translate="">Results</tal:>
+                                <span class="caret"></span> <span class="sr-only">More Action</span></button>
+                            <ul role="menu" class="dropdown-menu">
+                                <li><a data-target="step5-import" href="#"><span
+                                        class="glyphicon glyphicon glyphicon-open-file"></span>
+                                    <tal: i18n:translate="">Import Results data</tal:>
+                                </a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li><a data-target="step5-add" href="#"><span
+                                        class="glyphicon glyphicon-plus-sign"></span>
+                                    <tal: i18n:translate="">Add Results data</tal:>
+                                </a></li>
+                                <li class="divider"></li>
+                                <li><a data-target="step5-edit" href="#"><span
+                                        class="glyphicon glyphicon glyphicon-edit"></span>
+                                    <tal: i18n:translate="">Edit Results data</tal:>
+                                </a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div id="refreshBtn" class="btn-group" role="group" aria-label="..." style="display: none;">
+                        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom"
+                                data-target="refresh" title="Refresh">
+                            <span class="glyphicon glyphicon-repeat"></span>
+                        </button>
+                    </div>
+
+                    <div id="dataBtnGroup" class="btn-group">
+
+                        <div class="btn-group">
+                            <button aria-expanded="true" data-toggle="dropdown" class="btn btn-default dropdown-toggle"
+                                    type="button" title="actions" i18n:attributes="title">
+                                <span class="glyphicon glyphicon-tag"></span>
+                                <tal: i18n:translate="">Actions</tal:>
+                                <span class="caret"></span> <span class="sr-only">Redo/Report</span></button>
+                            <ul role="menu" class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+                                <li role="presentation"><a data-target="steps" href="#"><span
+                                        class="glyphicon glyphicon-pencil"></span>
+                                    <tal: i18n:translate="">Change Steps</tal:>
+                                </a></li>
+                                <li role="presentation"><a data-target="state" href="#"><span
+                                        class="glyphicon glyphicon-transfer"></span>
+                                    <tal: i18n:translate="">State transition</tal:>
+                                </a></li>
+                                <li role="presentation"><a data-target="redo" href="#"
+                                                           title="Redo failed item" i18n:attributes="title"><span
+                                        class="glyphicon glyphicon-repeat"></span>
+                                    <tal: i18n:translate="">Failed Redo</tal:>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="moreBtnGroup" class="btn-group">
+                        <button type="button" aria-expanded="false" data-toggle="dropdown"
+                                class="btn btn-default dropdown-toggle" title="More actions" i18n:attributes="title">
+                            <span class="glyphicon glyphicon-file"></span>
+                            <tal: i18n:translate="">More</tal:>
+                            <span class="caret"></span> <span class="sr-only">More Action</span></button>
+                        <ul role="menu" class="dropdown-menu">
+                            <li><a data-target="delete" href="#"><span class="glyphicon glyphicon-erase"></span>
+                                <tal: i18n:translate="">Delete Records</tal:>
+                            </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li role="presentation">
+                                <a data-target="export-item"
+                                   href="#"><span class="glyphicon glyphicon-export"></span>
+                                    <tal: i18n:translate="">Export Records</tal:>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a data-target="export-dilution"
+                                   href="#"><span class="glyphicon glyphicon-export"></span>
+                                    <tal: i18n:translate="">Export OT Dilution</tal:>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-5 dataTables_wrapper" id="datatable_paginate"></div>
+            </div>
+
+            <div class="table-responsive">
+                <table id="tumour_datatable" class="table table-striped table-bordered table-condensed table-hover"
+                       cellspacing="0" width="100%"
+                         tal:define="fields_name_title view/fields_name_title;">
+                    <thead>
+                    <tr>
+                        <th i18n:translate="">Select</th>
+                        <th i18n:translate="">Line number</th>
+                        <tal:block repeat="name_title fields_name_title">
+                            <th tal:content="python:name_title[1]"
+                                     tal:attributes="data-name python:name_title[0]"
+                                    data-name="name">field title
+                            </th>
+                        </tal:block>
+                        <th data-name="created" i18n:translate="">Creation time</th>
+                        <th data-name="modified" i18n:translate="">Modify time</th>
+                        <th i18n:translate="">Action</th>
+                    </tr>
+                    </thead>
+
+                    <tfoot>
+                    <tr>
+                        <th i18n:translate="">Select</th>
+                        <th i18n:translate="">Line number</th>
+                        <tal:block repeat="name_title fields_name_title">
+                            <th tal:content="python:name_title[1]"
+                                     tal:attributes="data-name python:name_title[0]"
+                                    data-name="name">field title
+                            </th>
+                        </tal:block>
+                        <th data-name="created" i18n:translate="">Creation time</th>
+                        <th data-name="modified" i18n:translate="">Modify time</th>
+                        <th i18n:translate="">Action</th>
+                    </tr>
+                    </tfoot>
+
+                    <tbody tal:replace="nothing"></tbody>
+                </table>
+            </div>
+
+            <!-- delete.modal -->
+            <div class="modal fade" id="delete_modal_dialog" tabindex="-1" role="dialog"
+                 aria-labelledby="delete alert modal dialog"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" i18n:translate="">Alert: delete data!</h4>
+                        </div>
+                        <div class="modal-body alert alert-danger" role="alert" i18n:translate="delete-warning">
+                            <strong>N</strong> Items will be permanently deleted! Deleted cannot be
+                            recovered.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-lg btn-danger" data-target="delete" i18n:translate="">
+                                Confirm
+                            </button>
+                            <button type="button" class="btn btn-lg btn-default" data-dismiss="modal" i18n:translate="">
+                                Cancel
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+
+            <!-- dilution.modal -->
+            <div class="modal fade" id="dilution_modal_dialog" tabindex="-1" role="dialog"
+                 aria-labelledby="dilution confirm modal dialog"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" i18n:translate="">Export OT Dilution</h4>
+                        </div>
+                        <div class="modal-body alert alert-info" role="alert" i18n:translate="dilution-confirm">
+                            <strong class="_total">N</strong> items selected, <strong class="_same">N</strong> same
+                            library barcode: <br/><span class="_bar"></span>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-lg btn-info"
+                                    data-target="export-dilution" i18n:translate="">
+                                Confirm
+                            </button>
+                            <button type="button" class="btn btn-lg btn-default" data-dismiss="modal" i18n:translate="">
+                                Cancel
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+
+            <!-- processing Indicator -->
+            <div id="progress-container" class="processingIndicator" style="display: none;">
+                <div id="progressbar">
+                    <div class="progress-label">Loading</div>
+                </div>
+            </div>
+            <!-- /.processing Indicator -->
+
+        </div>
+    </div>
+</metal:content-core>
+</body>
+</html>
+

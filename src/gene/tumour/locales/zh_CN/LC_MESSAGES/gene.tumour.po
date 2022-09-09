@@ -1,0 +1,1061 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2020-05-08 07:31+0000\n"
+"PO-Revision-Date: 2020-05-08 15:33+0800\n"
+"Last-Translator: Adam <yuejun.tang@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+"Language: zh_CN\n"
+"X-Generator: Poedit 1.8.8\n"
+
+#: ../browser/form.py:95
+msgid "${count} Item created"
+msgstr "${count} 条目已创建"
+
+#: ../browser/form.py:227
+msgid "${count} Item edited"
+msgstr "${count} 条目已编辑"
+
+#: ../browser/form.py:597
+msgid "${count} Item state changed"
+msgstr "${count} 条目转换状态"
+
+#: ../browser/import.py:481
+msgid "${count} item(s) import failed."
+msgstr "${count} 条数据导入失败。"
+
+#: ../browser/import.py:475
+msgid "${count} item(s) import successfully."
+msgstr "${count} 条数据导入成功。"
+
+#: ../browser/templates/import.pt:136
+msgid "${failed_percent}% Failed (${failed_rate})"
+msgstr "${failed_percent}% 失败 (${failed_rate})"
+
+#: ../browser/templates/import.pt:131
+msgid "${success_percent} Success (${success_rate})"
+msgstr "${success_percent} 成功 (${success_rate})"
+
+#: ../browser/templates/search_view.pt:181
+msgid "* zero or more character, ? one character"
+msgstr "* 零个或多个字符, ? 一个字符"
+
+#: ../browser/templates/search_view.pt:157
+msgid "1. Boolean expressions"
+msgstr "1.布尔表达式"
+
+#: ../browser/templates/search_view.pt:170
+msgid "2. Parentheses"
+msgstr "2.括号"
+
+#: ../browser/templates/search_view.pt:180
+msgid "3. Wild cards"
+msgstr "3.通配符"
+
+#: ../browser/templates/search_view.pt:200
+msgid "4. Phrase search"
+msgstr "4.短语搜索"
+
+#: ../browser/templates/search_view.pt:211
+msgid "5. Mixed together"
+msgstr "5.组合在一起"
+
+#: ../browser/templates/search_view.pt:158
+msgid "A sequence of words without operators implies AND. A search for 'carpet python snakes' translates to 'carpet AND python AND snakes'."
+msgstr "无操作符的单词序列表示 AND 操作。如搜索 'carpet python snakes' 将转化为 'carpet AND python AND snakes'。"
+
+#: ../browser/templates/search_view.pt:158
+msgid "AND, OR, NOT(synonym a -)"
+msgstr "AND, OR, NOT(同义符号'-')"
+
+#: ../browser/templates/search_view.pt:77
+msgid "Abort"
+msgstr "中止"
+
+#: ../interfaces.py:296 ../models/Tumour.xml
+msgid "Absorbance 260/280"
+msgstr "吸光度260/280"
+
+#: ../browser/templates/search_view.pt:465
+msgid "Action"
+msgstr "操作"
+
+#: ../browser/templates/search_view.pt:398
+msgid "Actions"
+msgstr "操作"
+
+#: ../browser/templates/search_view.pt:298
+msgid "Add NA data"
+msgstr "添加核酸数据"
+
+#: ../browser/templates/search_view.pt:373
+msgid "Add Results data"
+msgstr "添加结果数据"
+
+#: ../browser/versioning.py:16
+msgid "Add change notes"
+msgstr "添加备注"
+
+#: ../browser/versioning.py:17
+msgid "Add change notes, note the notes cannot be changed."
+msgstr "添加备注，注意备注无法更改。"
+
+#: ../browser/templates/search_view.pt:348
+msgid "Add detecting data"
+msgstr "添加检测数据"
+
+#: ../browser/templates/search_view.pt:323
+msgid "Add library data"
+msgstr "添加文库数据"
+
+#: ../browser/templates/search_view.pt:273
+msgid "Add sample data"
+msgstr "添加样本数据"
+
+#: ../browser/templates/search_view.pt:23
+msgid "Advanced search instructions"
+msgstr "高级搜索用法"
+
+#: ../interfaces.py:452
+msgid "After steps time must be greater than or equal to the previous steps time"
+msgstr "后一步骤时间必须大于等于前一步骤时间"
+
+#: ../interfaces.py:135 ../models/Tumour.xml
+msgid "Age"
+msgstr "年龄"
+
+#: ../browser/templates/search_view.pt:498
+msgid "Alert: delete data!"
+msgstr "警告︰删除数据！"
+
+#: ../browser/templates/search_view.pt:38
+msgid "All"
+msgstr "全部"
+
+#: ../browser/import.py:495
+msgid "An error occurred, and the operation aborted."
+msgstr "发生错误，操作中止。"
+
+#: ../browser/form.py:393 ../browser/templates/import.pt:29
+#: ../browser/templates/search_view.pt:63
+msgid "Analysis Results"
+msgstr "分析结果"
+
+#: ../browser/templates/import.pt:84
+msgid "Back"
+msgstr "返回"
+
+#: ../handlers.py:100 ../interfaces.py:120 ../models/Tumour.xml
+msgid "Barcode"
+msgstr "条码"
+
+#: ../browser/form.py:56 ../browser/templates/import.pt:25
+#: ../browser/templates/search_view.pt:53
+msgid "Blood Sample"
+msgstr "样本接收"
+
+#: ../browser/form.py:121 ../browser/templates/search_view.pt:508
+#: ../browser/versioning.py:48
+msgid "Cancel"
+msgstr "取消"
+
+#: ../browser/form.py:495 ../browser/templates/search_view.pt:403
+#: ../interfaces.py:1219
+msgid "Change Steps"
+msgstr "更改步骤"
+
+#: ../vocabulary.py:12
+msgid "Chemotherapy"
+msgstr "化疗"
+
+#: ../browser/form.py:381 ../browser/templates/import.pt:28
+#: ../browser/templates/search_view.pt:60
+msgid "Computer Detecting"
+msgstr "上机检测"
+
+#: ../browser/templates/search_view.pt:505
+msgid "Confirm"
+msgstr "确认"
+
+#: gene/tumour/browser/import.py
+msgid "Constraint not satisfied"
+msgstr "约束不满足"
+
+#: ../browser/templates/search_view.pt:171
+msgid "Control search order with parenthetical expressions"
+msgstr "用括号表达式控制搜索顺序"
+
+#: ../browser/templates/search_view.pt:143
+msgid "Creation time"
+msgstr "创建时间"
+
+#: ../interfaces.py:1235
+msgid "Data compression"
+msgstr "数据压缩"
+
+#: ../browser/templates/search_view.pt:426
+msgid "Delete Records"
+msgstr "删除记录"
+
+#: ../browser/templates/search_view.pt:338
+msgid "Detecting"
+msgstr "检测"
+
+#: ../browser/templates/search_view.pt:201
+msgid "Double-quoted text implies phrase search"
+msgstr "双引号括起来的文本表示短语搜索"
+
+#: ../browser/import.py:120 ../browser/templates/import.pt:72
+msgid "Dry run mode"
+msgstr "模拟执行模式"
+
+#: ../interfaces.py:372 ../models/Tumour.xml
+msgid "ES instrument number"
+msgstr "ES仪器编号"
+
+#: ../browser/templates/search_view.pt:303
+msgid "Edit NA data"
+msgstr "编辑核酸数据"
+
+#: ../browser/templates/search_view.pt:378
+msgid "Edit Results data"
+msgstr "编辑结果数据"
+
+#: ../browser/templates/search_view.pt:353
+msgid "Edit detecting data"
+msgstr "编辑检测数据"
+
+#: ../browser/templates/search_view.pt:328
+msgid "Edit library data"
+msgstr "编辑文库数据"
+
+#: ../browser/templates/search_view.pt:278
+msgid "Edit sample data"
+msgstr "编辑样本数据"
+
+#: ../interfaces.py:75
+msgid "Email notification"
+msgstr "Email通知"
+
+#: ../browser/import.py:172
+msgid "Excel data format error. Please correct it and retry. Error: expected ${expected} - got ${got}."
+msgstr "Excel 数据格式错误，请修正后重试。错误︰预期 ${expected} - 得到 ${got}。"
+
+#: ../browser/templates/import.pt:48
+msgid "Excel file"
+msgstr "Excel 文件"
+
+#: ../browser/import.py:187
+msgid "Execution results"
+msgstr "执行结果"
+
+#: gene/common/profiles/default/workflows/genetic_testing_workflow/definition.xml
+msgid "Experiment abort"
+msgstr "实验中止"
+
+#: gene/common/profiles/default/workflows/genetic_testing_workflow/definition.xml
+msgid "Experiment failed"
+msgstr "实验失败"
+
+#: gene/common/profiles/default/workflows/genetic_testing_workflow/definition.xml
+msgid "Experiment success"
+msgstr "实验成功"
+
+#: ../browser/templates/search_view.pt:439
+msgid "Export OT Dilution"
+msgstr "导出OT稀释表"
+
+#: ../browser/templates/search_view.pt:433
+msgid "Export Records"
+msgstr "导出记录"
+
+#: ../browser/templates/search_view.pt:129 ../interfaces.py:269
+#: ../models/Tumour.xml
+msgid "Extraction time"
+msgstr "提取时间"
+
+#: ../browser/templates/search_view.pt:75
+msgid "Failed"
+msgstr "失败"
+
+#: ../browser/form.py:407 ../browser/templates/search_view.pt:412
+#: ../interfaces.py:1211
+msgid "Failed Redo"
+msgstr "失败重做"
+
+#: gene/common/profiles/default/workflows/genetic_testing_workflow/definition.xml
+msgid "Fallback private"
+msgstr "回退保密"
+
+#: ../browser/import.py:165
+msgid "File type not supported."
+msgstr "不支持的文件类型。"
+
+#: ../interfaces.py:105
+msgid "Filter condition"
+msgstr "过滤条件"
+
+#: ../browser/import.py:126 ../browser/templates/import.pt:81
+msgid "Force all success"
+msgstr "必须全部成功"
+
+#: ../browser/templates/search_view.pt:21
+msgid "Full-text search"
+msgstr "全文搜索"
+
+#: ../browser/templates/search_view.pt:28
+msgid "Full-text search, Enter to submit"
+msgstr "全文搜索，回车提交"
+
+#: ../controlpanel.py:14
+msgid "Gene Tumour Settings"
+msgstr "Gene Tumour  设置"
+
+#: ../interfaces.py:234 ../models/Tumour.xml
+msgid "Glass inspection(Percentage of tumor cells/tumor cells)"
+msgstr "玻片质检（肿瘤细胞含量/肿瘤细胞占比）"
+
+#: ../interfaces.py:76
+msgid "If selected, enabled step change Email message notifications."
+msgstr "如果选中，启用步骤变更Email消息通知。"
+
+#: ../interfaces.py:63
+msgid "If selected, the sent SMS notification to user."
+msgstr "如果选中，发送用户短信通知。"
+
+#: ../browser/templates/import.pt:89
+msgid "Import"
+msgstr "导入"
+
+#: ../browser/templates/import.pt:35
+msgid "Import Excel file"
+msgstr "导入Excel文件"
+
+#: ../browser/templates/search_view.pt:293
+msgid "Import NA data"
+msgstr "导入核酸数据"
+
+#: ../browser/templates/search_view.pt:368
+msgid "Import Results data"
+msgstr "导入结果数据"
+
+#: ../browser/templates/search_view.pt:343
+msgid "Import detecting data"
+msgstr "导入检测数据"
+
+#: ../browser/templates/search_view.pt:318
+msgid "Import library data"
+msgstr "导入文库数据"
+
+#: ../browser/templates/search_view.pt:268
+msgid "Import sample data"
+msgstr "导入样本数据"
+
+#: ../browser/import.py:361
+msgid "Import successful: ${sample_title} ${sample_value}; "
+msgstr "导入成功: ${sample_title} ${sample_value}; "
+
+#: ../interfaces.py:142 ../models/Tumour.xml
+msgid "Inspection item"
+msgstr "检测项目"
+
+#: ../interfaces.py:147 ../models/Tumour.xml
+msgid "Inspection method"
+msgstr "检测方法"
+
+#: ../configure.zcml:34
+msgid "Installs the gene.tumour add-on."
+msgstr "安装gene.tumour包"
+
+#: ../browser/import.py:461
+msgid "Invalid import steps."
+msgstr "错误的导入步骤。"
+
+#: ../browser/templates/search_view.pt:313
+msgid "Library"
+msgstr "文库"
+
+#: ../browser/form.py:369 ../browser/templates/import.pt:27
+#: ../browser/templates/search_view.pt:57
+msgid "Library Construction"
+msgstr "文库构建"
+
+#: ../interfaces.py:319 ../models/Tumour.xml
+msgid "Library barcode"
+msgstr "Barcode"
+
+#: ../interfaces.py:324 ../models/Tumour.xml
+msgid "Library concentration (NG/UL)"
+msgstr "文库浓度（ng/ul)"
+
+#: ../interfaces.py:330 ../models/Tumour.xml
+msgid "Library construction operator"
+msgstr "文库构建操作人"
+
+#: ../browser/templates/search_view.pt:133 ../interfaces.py:313
+#: ../models/Tumour.xml
+msgid "Library construction time"
+msgstr "建库时间"
+
+#: ../interfaces.py:335 ../models/Tumour.xml
+msgid "Library kit lot number"
+msgstr "文库试剂盒批号"
+
+#: ../interfaces.py:340 ../models/Tumour.xml
+msgid "Library location"
+msgstr "文库存放位置"
+
+#: ../browser/import.py:186 ../browser/templates/search_view.pt:456
+msgid "Line number"
+msgstr "行号"
+
+#: ../browser/templates/search_view.pt:193
+msgid "Matches words that like 'apple' 'able'"
+msgstr "匹配单词像 'apple' 'able'"
+
+#: ../browser/templates/search_view.pt:191
+msgid "Matches words that like 'book' 'back'"
+msgstr "匹配单词像 'book' 'back'"
+
+#: ../browser/templates/search_view.pt:189
+msgid "Matches words that like 'oad' 'odd'"
+msgstr "匹配单词像 'oad' 'odd'"
+
+#: ../browser/templates/search_view.pt:195
+msgid "Matches words that like 'seek' 'speed'"
+msgstr "匹配单词像 'seek' 'speed'"
+
+#: ../browser/templates/search_view.pt:146
+msgid "Modification time"
+msgstr "修改时间"
+
+#: ../browser/templates/search_view.pt:464 ../handlers.py:105
+msgid "Modify time"
+msgstr "修改时间"
+
+#: ../browser/templates/search_view.pt:422
+msgid "More"
+msgstr "更多"
+
+#: ../browser/templates/search_view.pt:419
+msgid "More actions"
+msgstr "更多操作"
+
+#: ../browser/templates/search_view.pt:288
+msgid "NA"
+msgstr "核酸"
+
+#: ../browser/form.py:350 ../browser/templates/import.pt:26
+#: ../browser/templates/search_view.pt:55
+msgid "NA Extraction"
+msgstr "核酸提取"
+
+#: ../interfaces.py:275 ../models/Tumour.xml
+msgid "NA Extraction Type"
+msgstr "核酸提取类型"
+
+#: ../interfaces.py:290 ../models/Tumour.xml
+msgid "NA concentration (NG/UL)"
+msgstr "核酸浓度（ng/ul）"
+
+#: ../interfaces.py:307 ../models/Tumour.xml
+msgid "NA extracting operator"
+msgstr "核酸提取操作人"
+
+#: ../interfaces.py:302 ../models/Tumour.xml
+msgid "NA extraction kit lot number"
+msgstr "核酸提取试剂盒批号"
+
+#: ../interfaces.py:284 ../models/Tumour.xml
+msgid "NA plasma volume(ml)"
+msgstr "核酸血浆体积(ml)"
+
+#: ../interfaces.py:278 ../models/Tumour.xml
+msgid "NA type"
+msgstr "核酸类型"
+
+#: ../interfaces.py:125 ../models/Tumour.xml
+msgid "Name"
+msgstr "姓名"
+
+#: ../vocabulary.py:50
+msgid "Negative"
+msgstr "阴性"
+
+#: ../browser/templates/import.pt:94
+msgid "Next"
+msgstr "下一步"
+
+#: ../browser/import.py:131
+msgid "No files were selected."
+msgstr "未选择任何文件。"
+
+#: ../browser/templates/search_view.pt:235
+msgid "None"
+msgstr "无"
+
+#: ../browser/versioning.py:40
+msgid "Note has been added."
+msgstr "备注已添加。"
+
+#: ../browser/versioning.py:43
+msgid "Note has not been added."
+msgstr "备注未添加。"
+
+#: ../browser/templates/search_view.pt:181
+msgid "Note though that wild cards cannot be at the beginning of a search phrase. '?ope' is an illegal search term and will be ignored."
+msgstr "注意通配符不能在搜索短语开头。'?ope' 是非法的搜索词，将被忽略。"
+
+#: ../interfaces.py:367 ../models/Tumour.xml
+msgid "OT instrument number"
+msgstr "OT仪器编号"
+
+#: gene/tumour/browser/import.py
+msgid "Object is of wrong type."
+msgstr "类型错误"
+
+#: ../interfaces.py:167 ../models/Tumour.xml
+msgid "Pathological diagnosis"
+msgstr "原病理诊断"
+
+#: ../interfaces.py:172 ../models/Tumour.xml
+msgid "Pathological number"
+msgstr "原病理号"
+
+#: ../browser/templates/search_view.pt:71
+msgid "Pending"
+msgstr "待审"
+
+#: ../interfaces.py:259 ../models/Tumour.xml
+msgid "Plasma location"
+msgstr "血浆存放位置"
+
+#: ../interfaces.py:264 ../models/Tumour.xml
+msgid "Plasma separation note"
+msgstr "血浆分离备注"
+
+#: ../interfaces.py:83
+msgid "Please fill out an integer range: 1-365"
+msgstr "请填写一个整数，范围：1-365"
+
+#: ../interfaces.py:1220
+msgid "Please select a new steps."
+msgstr "请选择新步骤"
+
+#: ../vocabulary.py:51
+msgid "Positive"
+msgstr "阳性"
+
+#: ../interfaces.py:345 ../models/Tumour.xml
+msgid "Post capture concentration (NG/UL)"
+msgstr "捕获后浓度(ng/ul)"
+
+#: ../browser/templates/search_view.pt:69
+msgid "Private"
+msgstr "保密"
+
+#: ../interfaces.py:415 ../models/Tumour.xml
+msgid "Quality control document"
+msgstr "质控文档"
+
+#: ../vocabulary.py:31
+msgid "RNA"
+msgstr "RNA"
+
+#: ../vocabulary.py:13
+msgid "Radiotherapy"
+msgstr "放疗"
+
+#: gene/tumour/browser/import.py
+msgid "Raised if the Validation process fails."
+msgstr "验证失败"
+
+#: ../interfaces.py:196 ../models/Tumour.xml
+msgid "Received address"
+msgstr "报告接收地址"
+
+#: ../interfaces.py:186 ../models/Tumour.xml
+msgid "Received operator"
+msgstr "接收操作人"
+
+#: ../interfaces.py:191 ../models/Tumour.xml
+msgid "Received phone"
+msgstr "接收人电话"
+
+#: ../browser/templates/search_view.pt:121 ../handlers.py:104
+#: ../interfaces.py:212
+msgid "Received time"
+msgstr "接收时间"
+
+#: ../interfaces.py:82
+msgid "Record Expiration days"
+msgstr "记录过期天数"
+
+#: ../interfaces.py:90
+msgid "Record expiration notification user group"
+msgstr "记录过期通知用户组"
+
+#: ../browser/templates/search_view.pt:409 ../interfaces.py:1212
+msgid "Redo failed item"
+msgstr "重做失败的条目"
+
+#: gene/tumour/browser/import.py
+msgid "Required input is missing."
+msgstr "缺少必需的输入"
+
+#: ../interfaces.py:404 ../models/Tumour.xml
+msgid "Result"
+msgstr "结果"
+
+#: ../interfaces.py:420 ../models/Tumour.xml
+msgid "Result detail"
+msgstr "结果详情"
+
+#: ../interfaces.py:410 ../models/Tumour.xml
+msgid "Result information"
+msgstr "结果信息"
+
+#: ../browser/templates/search_view.pt:363
+msgid "Results"
+msgstr "结果"
+
+#: ../browser/search_view.py:69 ../browser/templates/search_view.pt:67
+#: ../interfaces.py:1037
+msgid "Review state"
+msgstr "状态"
+
+#: ../interfaces.py:62
+msgid "SMS notification"
+msgstr "短信通知"
+
+#: ../interfaces.py:68
+msgid "SMS text"
+msgstr "短信内容"
+
+#: ../browser/templates/search_view.pt:263
+msgid "Sample"
+msgstr "样本"
+
+#: ../interfaces.py:223 ../models/Tumour.xml
+msgid "Sample note"
+msgstr "样本接收备注"
+
+#: ../handlers.py:99 ../interfaces.py:115 ../models/Tumour.xml
+msgid "Sample number"
+msgstr "样本编号"
+
+#: ../browser/templates/search_view.pt:259
+msgid "Sample receiving"
+msgstr "样本接收"
+
+#: ../models/Tumour.xml
+msgid "Sample size"
+msgstr "样本量"
+
+#: ../interfaces.py:218
+msgid "Sample size "
+msgstr "样本量"
+
+#: ../interfaces.py:228 ../models/Tumour.xml
+msgid "Sample source"
+msgstr "样本来源"
+
+#: ../interfaces.py:201 ../models/Tumour.xml
+msgid "Sample type"
+msgstr "样本类型"
+
+#: ../browser/templates/search_view.pt:117 ../handlers.py:103
+#: ../interfaces.py:206
+msgid "Sampling time"
+msgstr "采样时间"
+
+#: ../browser/form.py:103 ../browser/versioning.py:24
+msgid "Save"
+msgstr "保存"
+
+#: ../browser/templates/search_view.pt:455
+msgid "Select"
+msgstr "选择"
+
+#: ../browser/templates/import.pt:58
+msgid "Select the Excel file, click here to ${download} import template file."
+msgstr "选择Excel文件，点击${download}导入模板文件。"
+
+#: ../interfaces.py:1236
+msgid "Select this option if you want the data compression "
+msgstr "选中此项，进行数据压缩"
+
+#: ../browser/templates/search_view.pt:108
+msgid "Select time"
+msgstr "选择时间"
+
+#: ../interfaces.py:254 ../models/Tumour.xml
+msgid "Separation operator"
+msgstr "分离操作人"
+
+#: ../browser/templates/search_view.pt:125 ../interfaces.py:248
+#: ../models/Tumour.xml
+msgid "Separation time"
+msgstr "分离时间"
+
+#: ../interfaces.py:388 ../models/Tumour.xml
+msgid "Sequencer number"
+msgstr "测序仪编号"
+
+#: ../interfaces.py:393 ../models/Tumour.xml
+msgid "Sequencing IP"
+msgstr "服务器IP"
+
+#: ../browser/templates/search_view.pt:45 ../interfaces.py:398
+#: ../models/Tumour.xml
+msgid "Sequencing filename"
+msgstr "测序文件名"
+
+#: ../interfaces.py:383 ../models/Tumour.xml
+msgid "Sequencing operator"
+msgstr "测序操作人"
+
+#: ../browser/templates/search_view.pt:140 ../interfaces.py:377
+#: ../models/Tumour.xml
+msgid "Sequencing time"
+msgstr "测序时间"
+
+#: ../interfaces.py:130 ../models/Tumour.xml
+msgid "Sex"
+msgstr "性别"
+
+#: ../handlers.py:102
+msgid "State"
+msgstr "状态"
+
+#: ../browser/templates/search_view.pt:407 ../interfaces.py:1154
+msgid "State transition"
+msgstr "状态转换"
+
+#: ../browser/templates/import.pt:42
+msgid "Step"
+msgstr "步骤"
+
+#: ../browser/templates/search_view.pt:50 ../handlers.py:101
+#: ../interfaces.py:426
+msgid "Steps"
+msgstr "步骤"
+
+#: ../browser/import.py:393
+msgid "StepsError: steps expected ${expected}, got ${got}; "
+msgstr "步骤错误: 预期 ${expected}, 得到 ${got}; "
+
+#: ../interfaces.py:157 ../models/Tumour.xml
+msgid "Submission department"
+msgstr "送检科室"
+
+#: ../interfaces.py:162 ../models/Tumour.xml
+msgid "Submission doctor"
+msgstr "送检医生"
+
+#: ../interfaces.py:152 ../models/Tumour.xml
+msgid "Submission hospital"
+msgstr "送检医院"
+
+#: gene/common/profiles/default/workflows/genetic_testing_workflow/definition.xml
+msgid "Submit for review"
+msgstr "提交审核"
+
+#: ../browser/templates/search_view.pt:73
+msgid "Success"
+msgstr "成功"
+
+#: ../browser/import.py:185
+msgid "Success or failure"
+msgstr "成败"
+
+#: ../vocabulary.py:11
+msgid "Surgery"
+msgstr "手术"
+
+#: ../interfaces.py:233 ../models/Tumour.xml
+msgid "TCC/TCP"
+msgstr "TCC/TCP"
+
+#: ../vocabulary.py:14
+msgid "Targeted drug therapy"
+msgstr "靶向药物治疗"
+
+#: ../browser/templates/search_view.pt:43 ../interfaces.py:243
+#: ../models/Tumour.xml
+msgid "Task no"
+msgstr "任务单号"
+
+#: ../interfaces.py:362 ../models/Tumour.xml
+msgid "Template kit lot number"
+msgstr "模板制备试剂盒批号"
+
+#: ../interfaces.py:357 ../models/Tumour.xml
+msgid "Template preparation operator"
+msgstr "模板制备操作人"
+
+#: ../browser/templates/search_view.pt:137 ../interfaces.py:351
+#: ../models/Tumour.xml
+msgid "Template preparation time"
+msgstr "制备时间"
+
+#: ../browser/import.py:558 ../interfaces.py:53
+msgid "The URL you have provided could not be reached."
+msgstr "提供的URL无法抵达."
+
+#: ../interfaces.py:45
+msgid "The URL you have provided could not be reached. Please verify the URL is correct and that the network location is reachable."
+msgstr "您提供的网址无法到达。请验证网址是正确的，网络位置是可到达的。"
+
+#: ../interfaces.py:34
+msgid "The value is not of the correct format"
+msgstr "数值格式不正确"
+
+#: ../interfaces.py:26
+msgid "This time cannot be greater than current time"
+msgstr "此时间不能大于当前时间"
+
+#: ../browser/templates/search_view.pt:174
+msgid "This will return objects containing 'word1' and 'word2' or just objects that contain the term 'word3'."
+msgstr "返回包含 'word1' 和 'word2' 的对象，或只包含 'word3' 的对象。"
+
+#. Default: "This will search for all objects that contain both 'word1' and 'word2'."
+#: ../browser/templates/search_view.pt:163
+msgid "This will search for all objects that contain both 'word1' and 'word2'. "
+msgstr "将搜索包含 'word1' 和 'word2' 的所有对象。"
+
+#: ../interfaces.py:180 ../models/Tumour.xml
+msgid "Treatment"
+msgstr "治疗"
+
+#: ../interfaces.py:177 ../models/Tumour.xml
+msgid "Treatment situation"
+msgstr "治疗情况"
+
+#: ../profiles/default/types/Tumour.xml
+msgid "Tumour"
+msgstr ""
+
+#: ../interfaces.py:589
+msgid "UUID"
+msgstr "UUID"
+
+#: ../configure.zcml:44
+msgid "Uninstalls the gene.tumour add-on."
+msgstr "卸载gene.tumour包"
+
+#: ../interfaces.py:101
+msgid "User group"
+msgstr "用户组"
+
+#: ../interfaces.py:97
+msgid "User search filter"
+msgstr "用户搜索筛选"
+
+#: ../interfaces.py:98
+msgid "User search filter additional conditions"
+msgstr "用户搜索筛选附加条件"
+
+#: ../interfaces.py:106
+msgid "Users search additional filtering criteria. Reference usage: Advanced search instructions"
+msgstr "用户搜索附加过滤条件。用法参考: 高级搜索用法"
+
+#: gene/tumour/browser/import.py
+msgid "ValidationError"
+msgstr "验证错误"
+
+#: gene/tumour/browser/import.py
+msgid "Value is too big"
+msgstr "数值太大"
+
+#: ../browser/import.py:311
+msgid "ValuesError: ${sample_title} ${sample_value} already exist; "
+msgstr "数值错误: ${sample_title} ${sample_value} 已经存在; "
+
+#: ../browser/import.py:290
+msgid "ValuesError: ${sample_title} ${sample_value} are not unique; "
+msgstr "数值错误: ${sample_title} ${sample_value} 不唯一; "
+
+#: ../browser/import.py:375
+msgid "ValuesError: ${sample_title} ${sample_value} does't exist; "
+msgstr "数值错误: ${sample_title} ${sample_value} 不存在; "
+
+#: ../handlers.py:94
+msgid "Warn"
+msgstr "警告"
+
+#: ../interfaces.py:91
+msgid "When the entry has expired, send an email message to inform the user"
+msgstr "当记录过期，发送Email消息通知用户"
+
+#: ../browser/form.py:566 ../interfaces.py:1227
+msgid "Workflow state transition"
+msgstr "工作流状态转换"
+
+#: gene/tumour/browser/import.py
+msgid "Wrong contained type"
+msgstr "包含的类型错误"
+
+#: ../interfaces.py:69
+msgid "You need to send the text."
+msgstr "您需要发送的信息"
+
+#: ../handlers.py:96
+msgid "[${warn}] [Tumour] ${count} items Expiration Notification"
+msgstr "[${warn}] [Tumour] ${count} 条过期通知"
+
+#: ../browser/templates/search_view.pt:395
+msgid "actions"
+msgstr "操作"
+
+#: ../vocabulary.py:29
+msgid "cfDNA"
+msgstr "cfDNA"
+
+#: ../vocabulary.py:33
+msgid "cfDNA\\RNA"
+msgstr ""
+
+#. Default: "<strong>N</strong> Items will be permanently deleted! Deleted cannot be recovered."
+#: ../browser/templates/search_view.pt:500
+msgid "delete-warning"
+msgstr "<strong>N</strong> 条数据将被永久删除！删除无法恢复。"
+
+#. Default: "View"
+#: ../profiles/default/types/Tumour.xml
+msgid "description"
+msgstr ""
+
+#. Default: "<strong class=\"_total\">N</strong> items selected, <strong class=\"_same\">N</strong> same library barcode: <br /><span class=\"_bar\"></span>"
+#: ../browser/templates/search_view.pt:530
+msgid "dilution-confirm"
+msgstr "<strong class=\"_total\">N</strong> 条数据, <strong class=\"_same\">N</strong> 个重复的文库条码: <br /><span class=\"_bar\"></span>"
+
+#: ../browser/templates/import.pt:59
+msgid "download"
+msgstr "下载"
+
+#: ../browser/templates/search_view.pt:103
+msgid "end date"
+msgstr "结束日期"
+
+#: ../vocabulary.py:30
+msgid "gDNA"
+msgstr "gDNA"
+
+#: ../vocabulary.py:32
+msgid "gDNA\\RNA"
+msgstr ""
+
+#: ../browser/configure.zcml:36
+msgid "gene tumour search data"
+msgstr "Tumour查询数据"
+
+#: ../browser/configure.zcml:26
+msgid "gene tumour search view"
+msgstr "gene tumour search view"
+
+#: ../configure.zcml:34
+msgid "gene.tumour"
+msgstr ""
+
+#: ../configure.zcml:44
+msgid "gene.tumour (uninstall)"
+msgstr ""
+
+#. Default: "Enter a comment that describes the changes you made."
+#: ../interfaces.py:1050
+msgid "help_change_note"
+msgstr "输入一个注释，说明您所做的改动。"
+
+#. Default: "Cancel"
+#: ../browser/templates/import.pt:84
+msgid "label_cancel"
+msgstr "取消"
+
+#. Default: "Change Note"
+#: ../interfaces.py:1049
+msgid "label_change_note"
+msgstr "更改注释"
+
+#. Default: "Import"
+#: ../browser/templates/import.pt:89
+msgid "label_import"
+msgstr "导入"
+
+#: ../vocabulary.py:100
+msgid "name"
+msgstr "name"
+
+#: ../browser/form.py:124
+msgid "operation cancelled"
+msgstr "取消操作"
+
+#: ../browser/search_view.py:189
+msgid "result"
+msgstr "结果"
+
+#: ../browser/templates/search_view.pt:97
+msgid "start date"
+msgstr "开始日期"
+
+#: ../vocabulary.py:109
+msgid "step1"
+msgstr "样本"
+
+#: ../vocabulary.py:110
+msgid "step2"
+msgstr "核酸"
+
+#: ../vocabulary.py:111
+msgid "step3"
+msgstr "文库"
+
+#: ../vocabulary.py:112
+msgid "step4"
+msgstr "检测"
+
+#: ../vocabulary.py:113
+msgid "step5"
+msgstr "完成"
+
+#: ../browser/import.py:389
+msgid "steps"
+msgstr "步骤"
+
+#. Default: "duration:${time_to_duration}"
+#: ../browser/templates/import.pt:125
+msgid "time-report"
+msgstr "执行时长：${time_to_duration}"
+
+#: ../browser/templates/search_view.pt:185
+msgid "which returns all words that begin with 'Z'"
+msgstr "返回所有以 'Z' 开头的单词"
+
+#: ../browser/templates/search_view.pt:187
+msgid "which returns all words that begin with 'Zop' and have one more character - just like in a Un*x shell."
+msgstr "返回所有以 'Zop' 开头且后有一个字符的单词 — — 就像在 Un*x shell中。"
+
+#: ../browser/templates/search_view.pt:165
+msgid "which would search for occurrences of 'word1' but would exclude documents which contain 'word2'."
+msgstr "这将搜索包含 word1 但不包含 'word2' 的文档。"
+
+#: ../browser/templates/search_view.pt:212
+msgid "will return all objects that contain the terms 'bob' and 'uncle' but will not include any objects that contain words that start with 'Zoo' like 'Zoologist', 'Zoology', or 'Zoo' itself."
+msgstr "将返回包含 'bob' 和 'uncle'，但不包含以 'Zop' 开头的像 Zoologist', 'Zoology', 或 'Zoo' 的所有对象。"
+
+#: ../browser/templates/search_view.pt:216
+msgid "will return all objects which contain the word 'snakes' or 'frogs' but do not contain the phrase 'carpet python'."
+msgstr "将返回包含 'snakes' 或 'frogs' 但不包含短语 'carpet python' 的所有对象。"
+
+#: ../browser/templates/search_view.pt:205
+msgid "will search for all occurrences of the phrase 'carpet python' or of the word 'frogs'"
+msgstr "将搜索包含短语 'carpet python' 或 单词'frogs' 的所有对象"

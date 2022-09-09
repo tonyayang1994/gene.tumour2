@@ -1,0 +1,447 @@
+
+body.portaltype-gene.section-tumour #formfield-form-widgets-IRichText-text,
+body.template-gene.section-tumour #formfield-form-widgets-IRichText-text,
+body.portaltype-gene.section-tumour div.documentDescription.description {
+    display: none;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.col-md-8 {
+    padding-left: 0;
+}
+
+.dropdown-menu li.divider {
+    display: block;
+}
+
+
+#form-SearchableHelp.form-control-feedback {
+    right: auto;
+    z-index: 4;
+    pointer-events: auto;
+}
+
+.form-control-feedback.del_searchword {
+    left: -32px;
+    pointer-events: auto;
+    cursor: pointer;
+    z-index: 4;
+    font-size: 14px;
+}
+
+#form-searchbox.input-group .form-control {
+    padding-left: 32px;
+}
+
+#form-searchbox {
+    margin-bottom: 4px;
+}
+
+#form-date-from, #form-date-to {
+    width: 86px;
+    height: 34px;
+    /*padding-right: 34px;*/
+}
+
+.date-from, .date-to {
+    position: relative;
+    display: inline-block;
+}
+
+.date-from #form-date-from-clear, .date-to #form-date-to-clear {
+    right: -6px;
+    left: inherit;
+}
+
+table th, table td {
+    white-space: nowrap;
+}
+
+/*.result_table td:nth-of-type(2) {
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}*/
+/* steps */
+.section-tumour tr.step1 td:nth-of-type(-n+31) {
+    background: #fe85e4;
+}
+
+.section-tumour tr.step1:hover, .section-tumour tr.step1:hover td:nth-of-type(-n+31) {
+    background: #feb3ee;
+}
+
+.section-tumour tr.step2 td:nth-of-type(-n+43) {
+    background: #c072fc;
+}
+
+.section-tumour tr.step2:hover, .section-tumour tr.step2:hover td:nth-of-type(-n+43) {
+    background: #dbaffc;
+}
+
+.section-tumour tr.step3 td:nth-of-type(-n+50) {
+    background: #83b5fa;
+}
+
+.section-tumour tr.step3:hover, .section-tumour tr.step3:hover td:nth-of-type(-n+50) {
+    background: #aecefa;
+}
+
+.section-tumour tr.step4 td:nth-of-type(-n+60) {
+    background: #ddfc63;
+}
+
+.section-tumour .step4.selected > td:nth-of-type(-n+60) {
+    background: #bcc905;
+}
+
+.section-tumour tr.step4:hover, .section-tumour tr.step4:hover td:nth-of-type(-n+60) {
+    background: #c2d508;
+}
+
+.section-tumour tr.step5 td:nth-of-type(-n+63) {
+    background: #98fc54;
+}
+
+.section-tumour tr.step5:hover, .section-tumour tr.step5:hover td:nth-of-type(-n+63) {
+    background: #b5ff79;
+}
+
+.section-tumour tr.parsing td:nth-of-type(-n+63) {
+    background: #fab66d;
+}
+
+.section-tumour tr.parsing:hover, .section-tumour .parsing:hover td:nth-of-type(-n+63) {
+    background: #fbcc9a;
+}
+
+.section-tumour tr.failed td:nth-of-type(-n+63) {
+    background: #fb3d09;
+}
+
+.section-tumour tr.failed:hover, .section-tumour .failed:hover td:nth-of-type(-n+63) {
+    background-color: #fc7955;
+}
+
+.section-tumour tr.success td:nth-of-type(-n+63) {
+    background: #26ce0d;
+}
+
+.section-tumour tr.success:hover, .section-tumour .success:hover td:nth-of-type(-n+63) {
+    background-color: #8ade7d;
+}
+
+table.dataTable tr td:first-child {
+    text-align: center;
+}
+
+#tumour_datatable_filter, #tumour_datatable_length {
+    display: none;
+}
+
+#tumour_datatable_length, #tumour_datatable_info {
+    height: 34px;
+    line-height: 34px;
+}
+
+#tumour_datatable_length select {
+    vertical-align: middle;
+    width: auto;
+    display: inline-block;
+}
+
+#datatable_paginate {
+    clear: none;
+}
+
+#datatable_paginate .pagination > li {
+    display: inline;
+}
+
+.gid_box {
+    height: 10px;
+    width: 10px;
+    background-color: #000;
+    display: inline-block;
+}
+
+/*
+table.dataTable tr td:first-child:before {
+    content: "\e157";
+    font-family: 'Glyphicons Halflings';
+}
+
+table.dataTable tr.selected td:first-child:before {
+    content: "\e067";
+    font-family: 'Glyphicons Halflings';
+}*/
+
+/* Highlighting rows and columns
+The additional CSS in order to correctly display the table. */
+/*td.highlight {
+    background-color: whitesmoke !important;
+}*/
+
+/*++resource++collective.z3cform.datagridfield/datagridfield.css*/
+/*.datagridwidget-cell > input:only-child { width: auto; }*/
+
+.section-tumour div.step {
+    height: 48px;
+    position: relative;
+    margin-bottom: 10px;
+    float: none;
+}
+
+.section-tumour .step > div {
+    font-size: 18px;
+    height: 48px;
+    line-height: 48px;
+    color: #FFF;
+    background: #cacaca;
+    z-index: 1;
+    text-align: center;
+}
+
+.section-tumour .step > div:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -24px;
+    z-index: 8;
+    top: 0;
+    border-top: 24px solid #cacaca;
+    border-left: 24px solid transparent !important;
+    border-bottom: 24px solid #cacaca;
+}
+
+.section-tumour .step > div:first-child:before {
+    border: none;
+}
+
+.section-tumour .step > div:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    z-index: 9;
+    top: 0;
+    border-top: 24px solid transparent !important;
+    border-left: 24px solid #cacaca;
+    border-bottom: 24px solid transparent !important;
+    background-color: #FFF;
+}
+
+.section-tumour .step > div:last-child:after {
+    border: none;
+    width: 0;
+}
+
+.section-tumour .step1 > div:first-of-type {
+    background: #feb3ee;
+
+}
+
+.section-tumour .step1 > div:first-of-type:after {
+    border-left: 24px solid #feb3ee;
+}
+
+.section-tumour .step2 > div:nth-child(2) {
+    background: #c072fc;
+}
+
+.section-tumour .step2 > div:nth-child(2):before {
+    border-bottom: 24px solid #c072fc;
+    border-top: 24px solid #c072fc;
+}
+
+.section-tumour .step2 > div:nth-child(2):after {
+    border-left: 24px solid #c072fc;
+}
+
+.section-tumour .step3 > div:nth-child(3) {
+    background: #83b5fa;
+}
+
+.section-tumour .step3 > div:nth-child(3):before {
+    border-bottom: 24px solid #83b5fa;
+    border-top: 24px solid #83b5fa;
+}
+
+.section-tumour .step3 > div:nth-child(3):after {
+    border-left: 24px solid #83b5fa;
+}
+
+.section-tumour .step4 > div:nth-child(4) {
+    background: #ddfc63;
+}
+
+.section-tumour .step4 > div:nth-child(4):before {
+    border-bottom: 24px solid #ddfc63;
+    border-top: 24px solid #ddfc63;
+}
+
+.section-tumour .step4 > div:nth-child(4):after {
+    border-left: 24px solid #ddfc63;
+    background: #ddfc63;
+}
+
+.section-tumour .step5 > div:nth-child(5) {
+    background: #98fc54;
+}
+
+.section-tumour .step5 > div:nth-child(5):before {
+    border-bottom: 24px solid #98fc54;
+    border-top: 24px solid #98fc54;
+}
+
+.section-tumour .step5 > div:nth-child(5):after {
+    border-left: 24px solid #98fc54;
+    background: #98fc54;
+}
+
+.resultSteps {
+    padding-top: 0;
+    position: relative;
+}
+
+.resultSteps .alert {
+    line-height: 24px;
+}
+
+.resultSteps .glyphicon {
+    margin-right: 15px;
+}
+
+.resultSteps .progress {
+    overflow: visible;
+}
+
+.resultSteps .progress-bar {
+    position: relative;
+}
+
+.progress-bar-danger .sr-only {
+    left: auto;
+    right: 0;
+    text-align: right;
+}
+
+.gid_box:last-child {
+    margin-right: 4px;
+}
+
+
+#plone-contentmenu-workflow .state-success {
+    padding: 0 0.5em;
+    background-color: #26ce0d;
+    border: 0.1em solid #26ce0d;
+    color: White !important;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+}
+
+#plone-contentmenu-workflow .state-failed {
+    padding: 0 0.5em;
+    background-color: #fb3d09;
+    border: 0.1em solid #fb3d09;
+    color: White !important;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+}
+
+
+.state-success {
+    color: #26ce0d !important;
+}
+
+.state-failed {
+    color: #fb3d09 !important;
+}
+
+.kssattr-formname-genetumour-workflow-state-transition-form .option {
+    float: left;
+}
+
+.kssattr-formname-genetumour-workflow-state-transition-form .datagridwidget-cell {
+    vertical-align: middle;
+}
+
+.kssattr-formname-genetumour-workflow-state-transition-form .datagridwidget-cell .label {
+    color: #333;
+    font-weight: normal;
+}
+
+.label {
+    color: #000
+}
+
+#content a:link, dl.portlet a:link, #content a:visited, dl.portlet a:visited {
+    border-bottom: none;
+}
+
+#progressbar.ui-progressbar {
+    position: relative;
+}
+
+#progressbar .ui-progressbar-value {
+    background: #0f0;
+    margin: 0;
+}
+
+#progressbar .progress-label {
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.processingIndicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    /*height: 40px;*/
+    margin-left: -50%;
+    margin-top: -25px;
+    /*padding-top: 20px;*/
+    text-align: center;
+    font-size: 1.2em;
+    background-color: white;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(25%, rgba(255, 255, 255, 0.9)), color-stop(75%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(255, 255, 255, 0)));
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+}
+
+#content .dropdown-menu li {
+    list-style: none;
+}
+
+#content .dropdown-menu ul {
+    margin-left: 0;
+}
+
+#content ul {
+    margin-left: 0;
+}
+
+#form-SearchDate {
+    display: inline-block;
+}
+
+body.template-genetumour-analysis-results-form form span.namedblobfile-field input[value="nochange"],
+body.template-genetumour-analysis-results-form form span.namedblobfile-field input[value="nochange"] + label,
+body.template-genetumour-analysis-results-form form span.namedblobfile-field input[value="nochange"] + label + br {
+    display: none;
+}

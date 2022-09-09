@@ -1,0 +1,241 @@
+<model xmlns:form="http://namespaces.plone.org/supermodel/form" xmlns:i18n="http://xml.zope.org/namespaces/i18n" xmlns:marshal="http://namespaces.plone.org/supermodel/marshal" xmlns:security="http://namespaces.plone.org/supermodel/security" xmlns="http://namespaces.plone.org/supermodel/schema" i18n:domain="gene.tumour">
+  <schema based-on="zope.interface.Interface">
+    <invariant>gene.tumour.interfaces.steps_date_valid</invariant>
+    <field name="sample_no" type="zope.schema.TextLine">
+      <title i18n:translate="">Sample number</title>
+    </field>
+    <field name="barcode" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Barcode</title>
+    </field>
+    <field name="name" type="zope.schema.TextLine">
+      <title i18n:translate="">Name</title>
+    </field>
+    <field name="sex" type="zope.schema.TextLine">
+      <title i18n:translate="">Sex</title>
+    </field>
+    <field name="age" type="zope.schema.Int">
+      <max>200</max>
+      <min>0</min>
+      <title i18n:translate="">Age</title>
+    </field>
+    <field name="inspection_item" type="zope.schema.TextLine">
+      <title i18n:translate="">Inspection item</title>
+    </field>
+    <field name="inspection_method" type="zope.schema.TextLine">
+      <title i18n:translate="">Inspection method</title>
+    </field>
+    <field name="submission_hospital" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Submission hospital</title>
+    </field>
+    <field name="submission_department" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Submission department</title>
+    </field>
+    <field name="submission_doctor" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Submission doctor</title>
+    </field>
+    <field name="pathological_diagnosis" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Pathological diagnosis</title>
+    </field>
+    <field name="pathological_no" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Pathological number</title>
+    </field>
+    <field name="treatment_situation" type="zope.schema.List">
+      <required>False</required>
+      <title i18n:translate="">Treatment situation</title>
+      <value_type type="zope.schema.Choice">
+        <title i18n:translate="">Treatment</title>
+        <vocabulary>gene.tumour.vocabulary.treatment_situation</vocabulary>
+      </value_type>
+    </field>
+    <field name="received_operator" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Received operator</title>
+    </field>
+    <field name="received_phone" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Received phone</title>
+    </field>
+    <field name="received_address" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Received address</title>
+    </field>
+    <field name="sample_type" type="zope.schema.TextLine">
+      <title i18n:translate="">Sample type</title>
+    </field>
+    <field name="sampling_time" type="zope.schema.Datetime">
+      <required>False</required>
+      <title i18n:translate="">Sampling time</title>
+    </field>
+    <field name="received_time" type="zope.schema.Datetime">
+      <required>False</required>
+      <title i18n:translate="">Received time</title>
+    </field>
+    <field name="sample_size" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Sample size </title>
+    </field>
+    <field name="sample_note" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Sample note</title>
+    </field>
+    <field name="sample_source" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Sample source</title>
+    </field>
+    <field name="tcc_tcp" type="zope.schema.Float">
+      <description i18n:translate="">Glass inspection(Percentage of tumor cells/tumor cells)</description>
+      <max>1.0</max>
+      <min>0.0</min>
+      <required>False</required>
+      <title i18n:translate="">TCC/TCP</title>
+    </field>
+    <field name="task_no" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Task no</title>
+    </field>
+    <field name="separation_time" type="zope.schema.Datetime">
+      <required>False</required>
+      <title i18n:translate="">Separation time</title>
+    </field>
+    <field name="separation_operator" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Separation operator</title>
+    </field>
+    <field name="plasma_location" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Plasma location</title>
+    </field>
+    <field name="separation_note" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Plasma separation note</title>
+    </field>
+    <field name="extraction_time" type="zope.schema.Datetime">
+      <title i18n:translate="">Extraction time</title>
+    </field>
+    <field name="na_extraction_type" type="zope.schema.List">
+      <title i18n:translate="">NA Extraction Type</title>
+      <value_type type="zope.schema.Choice">
+        <title i18n:translate="">NA type</title>
+        <vocabulary>gene.tumour.vocabulary.na_types</vocabulary>
+      </value_type>
+    </field>
+    <field name="na_plasma_volume" type="zope.schema.Float">
+      <min>0.0</min>
+      <required>False</required>
+      <title i18n:translate="">NA plasma volume(ml)</title>
+    </field>
+    <field name="na_concentration" type="zope.schema.Float">
+      <min>0.0</min>
+      <required>False</required>
+      <title i18n:translate="">NA concentration (NG/UL)</title>
+    </field>
+    <field name="absorbance" type="zope.schema.Float">
+      <min>0.0</min>
+      <required>False</required>
+      <title i18n:translate="">Absorbance 260/280</title>
+    </field>
+    <field name="na_kit_no" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">NA extraction kit lot number</title>
+    </field>
+    <field name="na_operator" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">NA extracting operator</title>
+    </field>
+    <field name="library_time" type="zope.schema.Datetime">
+      <title i18n:translate="">Library construction time</title>
+    </field>
+    <field name="library_barcode" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Library barcode</title>
+    </field>
+    <field name="library_concentration" type="zope.schema.Float">
+      <min>0.0</min>
+      <required>False</required>
+      <title i18n:translate="">Library concentration (NG/UL)</title>
+    </field>
+    <field name="library_operator" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Library construction operator</title>
+    </field>
+    <field name="library_kit_no" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Library kit lot number</title>
+    </field>
+    <field name="library_location" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Library location</title>
+    </field>
+    <field name="capture_concentration" type="zope.schema.Float">
+      <min>0.0</min>
+      <required>False</required>
+      <title i18n:translate="">Post capture concentration (NG/UL)</title>
+    </field>
+    <field name="template_time" type="zope.schema.Datetime">
+      <title i18n:translate="">Template preparation time</title>
+    </field>
+    <field name="template_operator" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Template preparation operator</title>
+    </field>
+    <field name="template_kit_no" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Template kit lot number</title>
+    </field>
+    <field name="ot_instrument_no" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">OT instrument number</title>
+    </field>
+    <field name="es_instrument_no" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">ES instrument number</title>
+    </field>
+    <field name="sequencing_time" type="zope.schema.Datetime">
+      <title i18n:translate="">Sequencing time</title>
+    </field>
+    <field name="sequencing_operator" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Sequencing operator</title>
+    </field>
+    <field name="sequencing_server" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Sequencer number</title>
+    </field>
+    <field name="sequencing_ip" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Sequencing IP</title>
+    </field>
+    <field name="sequencing_filename" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Sequencing filename</title>
+    </field>
+    <field name="result" type="zope.schema.Choice">
+      <required>False</required>
+      <title i18n:translate="">Result</title>
+      <vocabulary>gene.tumour.vocabulary.analysis_result</vocabulary>
+    </field>
+    <field name="result_info" type="zope.schema.TextLine">
+      <required>False</required>
+      <title i18n:translate="">Result information</title>
+    </field>
+    <field name="quality_file" type="plone.namedfile.field.NamedBlobFile">
+      <required>False</required>
+      <title i18n:translate="">Quality control document</title>
+    </field>
+    <field name="result_file" type="plone.namedfile.field.NamedBlobFile">
+      <required>False</required>
+      <title i18n:translate="">Result detail</title>
+    </field>
+    <field name="steps" type="zope.schema.Choice">
+      <default>step1</default>
+      <title i18n:translate="">Steps</title>
+      <vocabulary>gene.tumour.vocabulary.progress_steps</vocabulary>
+    </field>
+  </schema>
+</model>

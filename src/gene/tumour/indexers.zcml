@@ -1,0 +1,8 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="gene.tumour">
+
+  <adapter name="SearchableText" factory=".indexers.SearchableText_tumour" />
+  <adapter name="gid" factory=".indexers.gid" />
+
+</configure>

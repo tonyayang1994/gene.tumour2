@@ -1,0 +1,50 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="gene.tumour">
+
+  <i18n:registerTranslations directory="locales" />
+
+  <includeDependencies package="." />
+
+  <include file="permissions.zcml"/>
+  <include file="vocabulary.zcml"/>
+  <include file="subscribers.zcml"/>
+  <include file="indexers.zcml"/>
+  <include package=".browser" />
+
+  <adapter factory=".adapters.NameFromDatetime"/>
+
+  <browser:page
+    for="Products.CMFCore.interfaces.ISiteRoot"
+    name="genetumour-controlpanel"
+    class=".controlpanel.GeneTumourControlPanelView"
+    permission="gene.tumour.ChangeSettings"
+  />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="gene.tumour"
+      directory="profiles/default"
+      description="Installs the gene.tumour add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.post_install"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="gene.tumour (uninstall)"
+      directory="profiles/uninstall"
+      description="Uninstalls the gene.tumour add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      pre_handler=".setuphandlers.pre_handler"
+      post_handler=".setuphandlers.uninstall"
+      />
+
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="gene.tumour-hiddenprofiles" />
+
+</configure>

@@ -1,0 +1,17 @@
+plone.directives.form
+plone.api
+Products.GenericSetup
+setuptools
+plone.app.dexterity
+xlrd
+xlwt
+collective.z3cform.datagridfield
+collective.schedule
+gene.common
+gene.theme
+
+[test]
+plone.app.testing
+plone.testing>=5.0.0
+plone.app.contenttypes
+plone.app.robotframework[debug]

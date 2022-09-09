@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<rolemap>
+  <permissions>
+    <permission name="gene.tumour: Add BloodSample" acquire="True">
+      <role name="BloodSample"/>
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <!--<role name="Owner"/>-->
+      <!--<role name="Contributor"/>-->
+    </permission>
+    <permission name="gene.tumour: Add NAExtraction" acquire="True">
+      <role name="NAExtraction"/>
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <!--<role name="Owner"/>-->
+      <!--<role name="Contributor"/>-->
+    </permission>
+    <permission name="gene.tumour: Add LibraryConstruction" acquire="True">
+      <role name="LibraryConstruction"/>
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <!--<role name="Owner"/>-->
+      <!--<role name="Contributor"/>-->
+    </permission>
+    <permission name="gene.tumour: Add ComputerDetecting" acquire="True">
+      <role name="ComputerDetecting"/>
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <!--<role name="Owner"/>-->
+      <!--<role name="Contributor"/>-->
+    </permission>
+    <permission name="gene.tumour: Add ComputerDetecting" acquire="True">
+      <role name="ComputerDetecting"/>
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <!--<role name="Owner"/>-->
+      <!--<role name="Contributor"/>-->
+    </permission>
+    <permission name="gene.tumour: Add AnalysisResults" acquire="True">
+      <role name="ComputerDetecting"/>
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <!--<role name="Owner"/>-->
+      <!--<role name="Contributor"/>-->
+    </permission>
+
+    <permission name="gene.tumour: Add Tumour" acquire="True">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <!--<role name="Owner"/>-->
+      <!--<role name="Contributor"/>-->
+    </permission>
+
+    <permission name="gene.tumour: Modify Tumour" acquire="True">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Reviewer"/>
+      <!--<role name="Owner"/>-->
+      <!--<role name="Contributor"/>-->
+    </permission>
+    <permission name="gene.tumour: Del Tumour" acquire="True">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Reviewer"/>
+      <!--<role name="Owner"/>-->
+      <!--<role name="Contributor"/>-->
+    </permission>
+    <permission name="gene.tumour: Change Steps" acquire="True">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Reviewer"/>
+      <!--<role name="Owner"/>-->
+      <!--<role name="Contributor"/>-->
+      <role name="ComputerDetecting"/>
+    </permission>
+    <permission name="gene.tumour: Change Note" acquire="True">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <!--<role name="Owner"/>-->
+      <role name="BloodSample"/>
+      <role name="NAExtraction"/>
+      <role name="LibraryConstruction"/>
+      <role name="ComputerDetecting"/>
+    </permission>
+    <permission name="gene.tumour: Export Excel" acquire="True">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <!--<role name="Owner"/>-->
+      <!--<role name="Contributor"/>-->
+      <role name="BloodSample"/>
+      <role name="NAExtraction"/>
+      <role name="LibraryConstruction"/>
+      <role name="ComputerDetecting"/>
+    </permission>
+    <permission name="gene.tumour: Change Settings" acquire="True">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <!--<role name="Owner"/>-->
+      <!--<role name="Contributor"/>-->
+    </permission>
+
+  </permissions>
+</rolemap>

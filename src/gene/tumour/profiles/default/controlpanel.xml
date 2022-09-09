@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<object
+    name="portal_controlpanel"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="gene.tumour">
+
+    <configlet
+        title="Gene Tumour Settings"
+        description=""
+        action_id="genetumour-preferences"
+        appId="gene.tumour"
+        category="Products"
+        condition_expr=""
+        url_expr="string:${portal_url}/@@genetumour-controlpanel"
+        visible="True"
+        >
+      <permission>gene.tumour: Change Settings</permission>
+    </configlet>
+</object>

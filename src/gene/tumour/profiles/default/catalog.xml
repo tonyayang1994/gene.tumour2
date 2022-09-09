@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<object name="portal_catalog">
+
+    <index name="sample_no" meta_type="FieldIndex">
+        <indexed_attr value="sample_no"/>
+    </index>
+    <index name="barcode" meta_type="FieldIndex">
+        <indexed_attr value="barcode"/>
+    </index>
+    <index name="name" meta_type="FieldIndex">
+        <indexed_attr value="name"/>
+    </index>
+    <index name="sex" meta_type="FieldIndex">
+        <indexed_attr value="sex"/>
+    </index>
+    <index name="age" meta_type="FieldIndex">
+        <indexed_attr value="age"/>
+    </index>
+    <index name="gestational_weeks" meta_type="FieldIndex">
+        <indexed_attr value="gestational_weeks"/>
+    </index>
+    <index name="sample_source" meta_type="FieldIndex">
+        <indexed_attr value="sample_source"/>
+    </index>
+    <index name="submission_hospital" meta_type="FieldIndex">
+        <indexed_attr value="submission_hospital"/>
+    </index>
+    <index name="received_time" meta_type="DateIndex">
+        <property name="index_naive_time_as_local">True</property>
+    </index>
+
+    <index name="task_no" meta_type="FieldIndex">
+        <indexed_attr value="task_no"/>
+    </index>
+    <index name="separation_time" meta_type="DateIndex">
+        <property name="index_naive_time_as_local">True</property>
+    </index>
+    <index name="extraction_time" meta_type="DateIndex">
+        <property name="index_naive_time_as_local">True</property>
+    </index>
+    <index name="dna_concentration" meta_type="FieldIndex">
+        <indexed_attr value="dna_concentration"/>
+    </index>
+
+    <index name="library_time" meta_type="DateIndex">
+        <property name="index_naive_time_as_local">True</property>
+    </index>
+    <index name="library_concentration" meta_type="FieldIndex">
+        <indexed_attr value="library_concentration"/>
+    </index>
+
+    <index name="template_time" meta_type="DateIndex">
+        <property name="index_naive_time_as_local">True</property>
+    </index>
+    <index name="sequencing_time" meta_type="DateIndex">
+        <property name="index_naive_time_as_local">True</property>
+    </index>
+    <index name="sequencing_filename" meta_type="FieldIndex">
+        <indexed_attr value="sequencing_filename"/>
+    </index>
+
+
+    <index name="gid" meta_type="FieldIndex">
+        <indexed_attr value="gid"/>
+    </index>
+    <index name="steps" meta_type="FieldIndex">
+        <indexed_attr value="steps"/>
+    </index>
+
+    <column value="sample_no"/>
+    <column value="barcode"/>
+    <column value="patient_phone"/>
+
+    <column value="gid"/>
+    <column value="steps"/>
+
+</object>

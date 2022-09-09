@@ -1,0 +1,12 @@
+<configure
+    xmlns:schedule="http://namespaces.zope.org/schedule">
+
+    <include package="collective.schedule" />
+
+    <schedule:job
+      view="genetumour-task-check-expiration"
+      unit="day"
+      at="8:00"
+      />
+
+</configure>

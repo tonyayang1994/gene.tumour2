@@ -1,0 +1,21 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  i18n_domain="gene.tumour">
+
+  <adapter
+    factory=".validator.BloodSampleAddValidator"
+  />
+  <adapter
+    factory=".validator.BloodSampleAddListValidator"
+  />
+  <adapter
+    factory=".validator.BloodSampleEditListValidator"
+  />
+  <adapter
+    factory=".validator.FailedRedoEditListValidator"
+  />
+  <adapter
+    factory=".validator.WorkflowStateTransitionListValidator"
+  />
+
+</configure>

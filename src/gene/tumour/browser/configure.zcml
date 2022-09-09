@@ -1,0 +1,170 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="gene.tumour">
+
+  <include package="plone.app.contentmenu"/>
+  <include file="validator.zcml"/>
+  <include file="schedule.zcml"/>
+
+  <browser:resourceDirectory
+      name="gene.tumour"
+      directory="static"
+      />
+
+  <browser:page
+    name="genetumour-search-view"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".search_view.SearchView"
+    template="templates/search_view.pt"
+    layer="gene.tumour.interfaces.IGeneTumourLayer"
+    permission="zope.Public"
+    menu="plone_displayviews"
+    title="gene tumour search view"
+  />
+  <browser:page
+    name="genetumour-search-data"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".search_view.SearchView"
+    attribute="table_data"
+    layer="gene.tumour.interfaces.IGeneTumourLayer"
+    permission="zope.Public"
+    menu="plone_displayviews"
+    title="gene tumour search data"
+  />
+
+  <browser:page
+    for="Products.CMFCore.interfaces.IFolderish"
+    name="genetumour-blood-sample-addform"
+    class=".form.BloodSampleAddForm"
+    layer="gene.tumour.interfaces.IGeneTumourLayer"
+    permission="zope.Public"
+  />
+  <browser:page
+    for="Products.CMFCore.interfaces.IFolderish"
+    name="genetumour-blood-sample-form"
+    class=".form.BloodSampleEditForm"
+    layer="gene.tumour.interfaces.IGeneTumourLayer"
+    permission="zope.Public"
+  />
+  <browser:page
+    for="Products.CMFCore.interfaces.IFolderish"
+    name="genetumour-na-extraction-form"
+    class=".form.NAExtractionEditForm"
+    layer="gene.tumour.interfaces.IGeneTumourLayer"
+    permission="zope.Public"
+  />
+  <browser:page
+    for="Products.CMFCore.interfaces.IFolderish"
+    name="genetumour-library-construction-form"
+    class=".form.LibraryConstructionEditForm"
+    layer="gene.tumour.interfaces.IGeneTumourLayer"
+    permission="zope.Public"
+  />
+  <browser:page
+    for="Products.CMFCore.interfaces.IFolderish"
+    name="genetumour-computer-detecting-form"
+    class=".form.ComputerDetectingEditForm"
+    layer="gene.tumour.interfaces.IGeneTumourLayer"
+    permission="zope.Public"
+  />
+  <browser:page
+    for="Products.CMFCore.interfaces.IFolderish"
+    name="genetumour-analysis-results-form"
+    class=".form.AnalysisResultsEditForm"
+    layer="gene.tumour.interfaces.IGeneTumourLayer"
+    permission="zope.Public"
+  />
+  <browser:page
+    for="Products.CMFCore.interfaces.IFolderish"
+    name="genetumour-failed-redo-form"
+    class=".form.FailedRedoEditForm"
+    layer="gene.tumour.interfaces.IGeneTumourLayer"
+    permission="zope.Public"
+  />
+  <browser:page
+    for="Products.CMFCore.interfaces.IFolderish"
+    name="genetumour-change-steps-form"
+    class=".form.ChangeStepsEditForm"
+    layer="gene.tumour.interfaces.IGeneTumourLayer"
+    permission="zope.Public"
+  />
+  <browser:page
+    for="Products.CMFCore.interfaces.IFolderish"
+    name="genetumour-workflow-state-transition-form"
+    class=".form.WorkflowStateTransitionForm"
+    layer="gene.tumour.interfaces.IGeneTumourLayer"
+    permission="zope.Public"
+  />
+
+  <browser:page
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".import.ImportExcel"
+    template="templates/import.pt"
+    name="genetumour-import-excel"
+    permission="zope.Public"
+    layer="gene.tumour.interfaces.IGeneTumourLayer"
+  />
+  <browser:page
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".import.ImportExcel"
+    attribute="import_excel_template"
+    name="genetumour-import-excel-template"
+    permission="zope.Public"
+    layer="gene.tumour.interfaces.IGeneTumourLayer"
+  />
+
+  <browser:page
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".export.ExportExcel"
+    attribute="export_items"
+    name="genetumour-export-items"
+    permission="gene.tumour.ExportExcel"
+    layer="gene.tumour.interfaces.IGeneTumourLayer"
+  />
+  <browser:page
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".export.ExportExcel"
+    attribute="export_dilution"
+    name="genetumour-export-dilution"
+    permission="gene.tumour.ExportExcel"
+    layer="gene.tumour.interfaces.IGeneTumourLayer"
+  />
+
+  <browser:page
+    for="Products.CMFCore.interfaces.ISiteRoot"
+    class=".jsonrpc.JsonRPC"
+    attribute="pull_data"
+    name="genetumour-rpc-pull"
+    permission="cmf.ReviewPortalContent"
+    layer="gene.tumour.interfaces.IGeneTumourLayer"
+  />
+  <browser:page
+    for="Products.CMFCore.interfaces.ISiteRoot"
+    class=".jsonrpc.JsonRPC"
+    attribute="push_data"
+    name="genetumour-rpc-push"
+    permission="cmf.ReviewPortalContent"
+    layer="gene.tumour.interfaces.IGeneTumourLayer"
+  />
+
+  <browser:page
+    for="Products.CMFCore.interfaces.ISiteRoot"
+    class=".schedule.JobView"
+    attribute="check_expiration_job"
+    name="genetumour-task-check-expiration"
+    permission="zope.Public"
+    layer="gene.tumour.interfaces.IGeneTumourLayer"
+  />
+
+  <browser:page
+    for="gene.tumour.interfaces.ITumour"
+    class=".versioning.ChangeNoteForm"
+    name="genetumour-changenote"
+    permission="gene.tumour.ChangeNote"
+    layer="gene.tumour.interfaces.IGeneTumourLayer"
+  />
+
+</configure>

@@ -1,0 +1,78 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:i18n="http://namespaces.zope.org/i18n"
+  i18n_domain="gene.tumour">
+
+  <permission
+    id="gene.tumour.AddBloodSample"
+    title="gene.tumour: Add BloodSample"
+    i18n:attributes="title"
+  />
+
+  <permission
+    id="gene.tumour.AddNAExtraction"
+    title="gene.tumour: Add NAExtraction"
+    i18n:attributes="title"
+  />
+
+  <permission
+    id="gene.tumour.AddLibraryConstruction"
+    title="gene.tumour: Add LibraryConstruction"
+    i18n:attributes="title"
+  />
+
+  <permission
+    id="gene.tumour.AddComputerDetecting"
+    title="gene.tumour: Add ComputerDetecting"
+    i18n:attributes="title"
+  />
+
+  <permission
+    id="gene.tumour.AddAnalysisResults"
+    title="gene.tumour: Add AnalysisResults"
+    i18n:attributes="title"
+  />
+
+  <permission
+    id="gene.tumour.AddTumour"
+    title="gene.tumour: Add Tumour"
+    i18n:attributes="title"
+  />
+
+  <permission
+    id="gene.tumour.ModifyTumour"
+    title="gene.tumour: Modify Tumour"
+    i18n:attributes="title"
+    />
+
+  <permission
+    id="gene.tumour.DelTumour"
+    title="gene.tumour: Del Tumour"
+    i18n:attributes="title"
+  />
+
+  <permission
+    id="gene.tumour.ChangeSteps"
+    title="gene.tumour: Change Steps"
+    i18n:attributes="title"
+  />
+
+  <permission
+    id="gene.tumour.ChangeNote"
+    title="gene.tumour: Change Note"
+    i18n:attributes="title"
+  />
+
+  <permission
+    id="gene.tumour.ExportExcel"
+    title="gene.tumour: Export Excel"
+    i18n:attributes="title"
+  />
+
+  <permission
+    id="gene.tumour.ChangeSettings"
+    title="gene.tumour: Change Settings"
+    i18n:attributes="title"
+  />
+
+</configure>

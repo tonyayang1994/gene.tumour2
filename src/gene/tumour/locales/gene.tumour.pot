@@ -1,0 +1,1141 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-05-08 07:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ../browser/form.py:95
+msgid "${count} Item created"
+msgstr ""
+
+#: ../browser/form.py:227
+msgid "${count} Item edited"
+msgstr ""
+
+#: ../browser/form.py:597
+msgid "${count} Item state changed"
+msgstr ""
+
+#: ../browser/import.py:481
+msgid "${count} item(s) import failed."
+msgstr ""
+
+#: ../browser/import.py:475
+msgid "${count} item(s) import successfully."
+msgstr ""
+
+#: ../browser/templates/import.pt:136
+msgid "${failed_percent}% Failed (${failed_rate})"
+msgstr ""
+
+#: ../browser/templates/import.pt:131
+msgid "${success_percent} Success (${success_rate})"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:181
+msgid "* zero or more character, ? one character"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:157
+msgid "1. Boolean expressions"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:170
+msgid "2. Parentheses"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:180
+msgid "3. Wild cards"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:200
+msgid "4. Phrase search"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:211
+msgid "5. Mixed together"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:158
+msgid "A sequence of words without operators implies AND. A search for 'carpet python snakes' translates to 'carpet AND python AND snakes'."
+msgstr ""
+
+#: ../browser/templates/search_view.pt:158
+msgid "AND, OR, NOT(synonym a -)"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:77
+msgid "Abort"
+msgstr ""
+
+#: ../interfaces.py:296
+#: ../models/Tumour.xml
+msgid "Absorbance 260/280"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:465
+msgid "Action"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:398
+msgid "Actions"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:298
+msgid "Add NA data"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:373
+msgid "Add Results data"
+msgstr ""
+
+#: ../browser/versioning.py:16
+msgid "Add change notes"
+msgstr ""
+
+#: ../browser/versioning.py:17
+msgid "Add change notes, note the notes cannot be changed."
+msgstr ""
+
+#: ../browser/templates/search_view.pt:348
+msgid "Add detecting data"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:323
+msgid "Add library data"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:273
+msgid "Add sample data"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:23
+msgid "Advanced search instructions"
+msgstr ""
+
+#: ../interfaces.py:452
+msgid "After steps time must be greater than or equal to the previous steps time"
+msgstr ""
+
+#: ../interfaces.py:135
+#: ../models/Tumour.xml
+msgid "Age"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:498
+msgid "Alert: delete data!"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:38
+msgid "All"
+msgstr ""
+
+#: ../browser/import.py:495
+msgid "An error occurred, and the operation aborted."
+msgstr ""
+
+#: ../browser/form.py:393
+#: ../browser/templates/import.pt:29
+#: ../browser/templates/search_view.pt:63
+msgid "Analysis Results"
+msgstr ""
+
+#: ../browser/templates/import.pt:84
+msgid "Back"
+msgstr ""
+
+#: ../handlers.py:100
+#: ../interfaces.py:120
+#: ../models/Tumour.xml
+msgid "Barcode"
+msgstr ""
+
+#: ../browser/form.py:56
+#: ../browser/templates/import.pt:25
+#: ../browser/templates/search_view.pt:53
+msgid "Blood Sample"
+msgstr ""
+
+#: ../browser/form.py:121
+#: ../browser/templates/search_view.pt:508
+#: ../browser/versioning.py:48
+msgid "Cancel"
+msgstr ""
+
+#: ../browser/form.py:495
+#: ../browser/templates/search_view.pt:403
+#: ../interfaces.py:1219
+msgid "Change Steps"
+msgstr ""
+
+#: ../vocabulary.py:12
+msgid "Chemotherapy"
+msgstr ""
+
+#: ../browser/form.py:381
+#: ../browser/templates/import.pt:28
+#: ../browser/templates/search_view.pt:60
+msgid "Computer Detecting"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:505
+msgid "Confirm"
+msgstr ""
+
+#: gene/tumour/browser/import.py
+msgid "Constraint not satisfied"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:171
+msgid "Control search order with parenthetical expressions"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:143
+msgid "Creation time"
+msgstr ""
+
+#: ../interfaces.py:1235
+msgid "Data compression"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:426
+msgid "Delete Records"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:338
+msgid "Detecting"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:201
+msgid "Double-quoted text implies phrase search"
+msgstr ""
+
+#: ../browser/import.py:120
+#: ../browser/templates/import.pt:72
+msgid "Dry run mode"
+msgstr ""
+
+#: ../interfaces.py:372
+#: ../models/Tumour.xml
+msgid "ES instrument number"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:303
+msgid "Edit NA data"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:378
+msgid "Edit Results data"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:353
+msgid "Edit detecting data"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:328
+msgid "Edit library data"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:278
+msgid "Edit sample data"
+msgstr ""
+
+#: ../interfaces.py:75
+msgid "Email notification"
+msgstr ""
+
+#: ../browser/import.py:172
+msgid "Excel data format error. Please correct it and retry. Error: expected ${expected} - got ${got}."
+msgstr ""
+
+#: ../browser/templates/import.pt:48
+msgid "Excel file"
+msgstr ""
+
+#: ../browser/import.py:187
+msgid "Execution results"
+msgstr ""
+
+#: gene/common/profiles/default/workflows/genetic_testing_workflow/definition.xml
+msgid "Experiment abort"
+msgstr ""
+
+#: gene/common/profiles/default/workflows/genetic_testing_workflow/definition.xml
+msgid "Experiment failed"
+msgstr ""
+
+#: gene/common/profiles/default/workflows/genetic_testing_workflow/definition.xml
+msgid "Experiment success"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:439
+msgid "Export OT Dilution"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:433
+msgid "Export Records"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:129
+#: ../interfaces.py:269
+#: ../models/Tumour.xml
+msgid "Extraction time"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:75
+msgid "Failed"
+msgstr ""
+
+#: ../browser/form.py:407
+#: ../browser/templates/search_view.pt:412
+#: ../interfaces.py:1211
+msgid "Failed Redo"
+msgstr ""
+
+#: gene/common/profiles/default/workflows/genetic_testing_workflow/definition.xml
+msgid "Fallback private"
+msgstr ""
+
+#: ../browser/import.py:165
+msgid "File type not supported."
+msgstr ""
+
+#: ../interfaces.py:105
+msgid "Filter condition"
+msgstr ""
+
+#: ../browser/import.py:126
+#: ../browser/templates/import.pt:81
+msgid "Force all success"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:21
+msgid "Full-text search"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:28
+msgid "Full-text search, Enter to submit"
+msgstr ""
+
+#: ../controlpanel.py:14
+msgid "Gene Tumour Settings"
+msgstr ""
+
+#: ../interfaces.py:234
+#: ../models/Tumour.xml
+msgid "Glass inspection(Percentage of tumor cells/tumor cells)"
+msgstr ""
+
+#: ../interfaces.py:76
+msgid "If selected, enabled step change Email message notifications."
+msgstr ""
+
+#: ../interfaces.py:63
+msgid "If selected, the sent SMS notification to user."
+msgstr ""
+
+#: ../browser/templates/import.pt:89
+msgid "Import"
+msgstr ""
+
+#: ../browser/templates/import.pt:35
+msgid "Import Excel file"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:293
+msgid "Import NA data"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:368
+msgid "Import Results data"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:343
+msgid "Import detecting data"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:318
+msgid "Import library data"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:268
+msgid "Import sample data"
+msgstr ""
+
+#: ../browser/import.py:361
+msgid "Import successful: ${sample_title} ${sample_value}; "
+msgstr ""
+
+#: ../interfaces.py:142
+#: ../models/Tumour.xml
+msgid "Inspection item"
+msgstr ""
+
+#: ../interfaces.py:147
+#: ../models/Tumour.xml
+msgid "Inspection method"
+msgstr ""
+
+#: ../configure.zcml:34
+msgid "Installs the gene.tumour add-on."
+msgstr ""
+
+#: ../browser/import.py:461
+msgid "Invalid import steps."
+msgstr ""
+
+#: ../browser/templates/search_view.pt:313
+msgid "Library"
+msgstr ""
+
+#: ../browser/form.py:369
+#: ../browser/templates/import.pt:27
+#: ../browser/templates/search_view.pt:57
+msgid "Library Construction"
+msgstr ""
+
+#: ../interfaces.py:319
+#: ../models/Tumour.xml
+msgid "Library barcode"
+msgstr ""
+
+#: ../interfaces.py:324
+#: ../models/Tumour.xml
+msgid "Library concentration (NG/UL)"
+msgstr ""
+
+#: ../interfaces.py:330
+#: ../models/Tumour.xml
+msgid "Library construction operator"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:133
+#: ../interfaces.py:313
+#: ../models/Tumour.xml
+msgid "Library construction time"
+msgstr ""
+
+#: ../interfaces.py:335
+#: ../models/Tumour.xml
+msgid "Library kit lot number"
+msgstr ""
+
+#: ../interfaces.py:340
+#: ../models/Tumour.xml
+msgid "Library location"
+msgstr ""
+
+#: ../browser/import.py:186
+#: ../browser/templates/search_view.pt:456
+msgid "Line number"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:193
+msgid "Matches words that like 'apple' 'able'"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:191
+msgid "Matches words that like 'book' 'back'"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:189
+msgid "Matches words that like 'oad' 'odd'"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:195
+msgid "Matches words that like 'seek' 'speed'"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:146
+msgid "Modification time"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:464
+#: ../handlers.py:105
+msgid "Modify time"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:422
+msgid "More"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:419
+msgid "More actions"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:288
+msgid "NA"
+msgstr ""
+
+#: ../browser/form.py:350
+#: ../browser/templates/import.pt:26
+#: ../browser/templates/search_view.pt:55
+msgid "NA Extraction"
+msgstr ""
+
+#: ../interfaces.py:275
+#: ../models/Tumour.xml
+msgid "NA Extraction Type"
+msgstr ""
+
+#: ../interfaces.py:290
+#: ../models/Tumour.xml
+msgid "NA concentration (NG/UL)"
+msgstr ""
+
+#: ../interfaces.py:307
+#: ../models/Tumour.xml
+msgid "NA extracting operator"
+msgstr ""
+
+#: ../interfaces.py:302
+#: ../models/Tumour.xml
+msgid "NA extraction kit lot number"
+msgstr ""
+
+#: ../interfaces.py:284
+#: ../models/Tumour.xml
+msgid "NA plasma volume(ml)"
+msgstr ""
+
+#: ../interfaces.py:278
+#: ../models/Tumour.xml
+msgid "NA type"
+msgstr ""
+
+#: ../interfaces.py:125
+#: ../models/Tumour.xml
+msgid "Name"
+msgstr ""
+
+#: ../vocabulary.py:50
+msgid "Negative"
+msgstr ""
+
+#: ../browser/templates/import.pt:94
+msgid "Next"
+msgstr ""
+
+#: ../browser/import.py:131
+msgid "No files were selected."
+msgstr ""
+
+#: ../browser/templates/search_view.pt:235
+msgid "None"
+msgstr ""
+
+#: ../browser/versioning.py:40
+msgid "Note has been added."
+msgstr ""
+
+#: ../browser/versioning.py:43
+msgid "Note has not been added."
+msgstr ""
+
+#: ../browser/templates/search_view.pt:181
+msgid "Note though that wild cards cannot be at the beginning of a search phrase. '?ope' is an illegal search term and will be ignored."
+msgstr ""
+
+#: ../interfaces.py:367
+#: ../models/Tumour.xml
+msgid "OT instrument number"
+msgstr ""
+
+#: gene/tumour/browser/import.py
+msgid "Object is of wrong type."
+msgstr ""
+
+#: ../interfaces.py:167
+#: ../models/Tumour.xml
+msgid "Pathological diagnosis"
+msgstr ""
+
+#: ../interfaces.py:172
+#: ../models/Tumour.xml
+msgid "Pathological number"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:71
+msgid "Pending"
+msgstr ""
+
+#: ../interfaces.py:259
+#: ../models/Tumour.xml
+msgid "Plasma location"
+msgstr ""
+
+#: ../interfaces.py:264
+#: ../models/Tumour.xml
+msgid "Plasma separation note"
+msgstr ""
+
+#: ../interfaces.py:83
+msgid "Please fill out an integer range: 1-365"
+msgstr ""
+
+#: ../interfaces.py:1220
+msgid "Please select a new steps."
+msgstr ""
+
+#: ../vocabulary.py:51
+msgid "Positive"
+msgstr ""
+
+#: ../interfaces.py:345
+#: ../models/Tumour.xml
+msgid "Post capture concentration (NG/UL)"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:69
+msgid "Private"
+msgstr ""
+
+#: ../interfaces.py:415
+#: ../models/Tumour.xml
+msgid "Quality control document"
+msgstr ""
+
+#: ../vocabulary.py:31
+msgid "RNA"
+msgstr ""
+
+#: ../vocabulary.py:13
+msgid "Radiotherapy"
+msgstr ""
+
+#: gene/tumour/browser/import.py
+msgid "Raised if the Validation process fails."
+msgstr ""
+
+#: ../interfaces.py:196
+#: ../models/Tumour.xml
+msgid "Received address"
+msgstr ""
+
+#: ../interfaces.py:186
+#: ../models/Tumour.xml
+msgid "Received operator"
+msgstr ""
+
+#: ../interfaces.py:191
+#: ../models/Tumour.xml
+msgid "Received phone"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:121
+#: ../handlers.py:104
+#: ../interfaces.py:212
+msgid "Received time"
+msgstr ""
+
+#: ../interfaces.py:82
+msgid "Record Expiration days"
+msgstr ""
+
+#: ../interfaces.py:90
+msgid "Record expiration notification user group"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:409
+#: ../interfaces.py:1212
+msgid "Redo failed item"
+msgstr ""
+
+#: gene/tumour/browser/import.py
+msgid "Required input is missing."
+msgstr ""
+
+#: ../interfaces.py:404
+#: ../models/Tumour.xml
+msgid "Result"
+msgstr ""
+
+#: ../interfaces.py:420
+#: ../models/Tumour.xml
+msgid "Result detail"
+msgstr ""
+
+#: ../interfaces.py:410
+#: ../models/Tumour.xml
+msgid "Result information"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:363
+msgid "Results"
+msgstr ""
+
+#: ../browser/search_view.py:69
+#: ../browser/templates/search_view.pt:67
+#: ../interfaces.py:1037
+msgid "Review state"
+msgstr ""
+
+#: ../interfaces.py:62
+msgid "SMS notification"
+msgstr ""
+
+#: ../interfaces.py:68
+msgid "SMS text"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:263
+msgid "Sample"
+msgstr ""
+
+#: ../interfaces.py:223
+#: ../models/Tumour.xml
+msgid "Sample note"
+msgstr ""
+
+#: ../handlers.py:99
+#: ../interfaces.py:115
+#: ../models/Tumour.xml
+msgid "Sample number"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:259
+msgid "Sample receiving"
+msgstr ""
+
+#: ../models/Tumour.xml
+msgid "Sample size"
+msgstr ""
+
+#: ../interfaces.py:218
+msgid "Sample size "
+msgstr ""
+
+#: ../interfaces.py:228
+#: ../models/Tumour.xml
+msgid "Sample source"
+msgstr ""
+
+#: ../interfaces.py:201
+#: ../models/Tumour.xml
+msgid "Sample type"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:117
+#: ../handlers.py:103
+#: ../interfaces.py:206
+msgid "Sampling time"
+msgstr ""
+
+#: ../browser/form.py:103
+#: ../browser/versioning.py:24
+msgid "Save"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:455
+msgid "Select"
+msgstr ""
+
+#: ../browser/templates/import.pt:58
+msgid "Select the Excel file, click here to ${download} import template file."
+msgstr ""
+
+#: ../interfaces.py:1236
+msgid "Select this option if you want the data compression "
+msgstr ""
+
+#: ../browser/templates/search_view.pt:108
+msgid "Select time"
+msgstr ""
+
+#: ../interfaces.py:254
+#: ../models/Tumour.xml
+msgid "Separation operator"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:125
+#: ../interfaces.py:248
+#: ../models/Tumour.xml
+msgid "Separation time"
+msgstr ""
+
+#: ../interfaces.py:388
+#: ../models/Tumour.xml
+msgid "Sequencer number"
+msgstr ""
+
+#: ../interfaces.py:393
+#: ../models/Tumour.xml
+msgid "Sequencing IP"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:45
+#: ../interfaces.py:398
+#: ../models/Tumour.xml
+msgid "Sequencing filename"
+msgstr ""
+
+#: ../interfaces.py:383
+#: ../models/Tumour.xml
+msgid "Sequencing operator"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:140
+#: ../interfaces.py:377
+#: ../models/Tumour.xml
+msgid "Sequencing time"
+msgstr ""
+
+#: ../interfaces.py:130
+#: ../models/Tumour.xml
+msgid "Sex"
+msgstr ""
+
+#: ../handlers.py:102
+msgid "State"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:407
+#: ../interfaces.py:1154
+msgid "State transition"
+msgstr ""
+
+#: ../browser/templates/import.pt:42
+msgid "Step"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:50
+#: ../handlers.py:101
+#: ../interfaces.py:426
+msgid "Steps"
+msgstr ""
+
+#: ../browser/import.py:393
+msgid "StepsError: steps expected ${expected}, got ${got}; "
+msgstr ""
+
+#: ../interfaces.py:157
+#: ../models/Tumour.xml
+msgid "Submission department"
+msgstr ""
+
+#: ../interfaces.py:162
+#: ../models/Tumour.xml
+msgid "Submission doctor"
+msgstr ""
+
+#: ../interfaces.py:152
+#: ../models/Tumour.xml
+msgid "Submission hospital"
+msgstr ""
+
+#: gene/common/profiles/default/workflows/genetic_testing_workflow/definition.xml
+msgid "Submit for review"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:73
+msgid "Success"
+msgstr ""
+
+#: ../browser/import.py:185
+msgid "Success or failure"
+msgstr ""
+
+#: ../vocabulary.py:11
+msgid "Surgery"
+msgstr ""
+
+#: ../interfaces.py:233
+#: ../models/Tumour.xml
+msgid "TCC/TCP"
+msgstr ""
+
+#: ../vocabulary.py:14
+msgid "Targeted drug therapy"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:43
+#: ../interfaces.py:243
+#: ../models/Tumour.xml
+msgid "Task no"
+msgstr ""
+
+#: ../interfaces.py:362
+#: ../models/Tumour.xml
+msgid "Template kit lot number"
+msgstr ""
+
+#: ../interfaces.py:357
+#: ../models/Tumour.xml
+msgid "Template preparation operator"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:137
+#: ../interfaces.py:351
+#: ../models/Tumour.xml
+msgid "Template preparation time"
+msgstr ""
+
+#: ../browser/import.py:558
+#: ../interfaces.py:53
+msgid "The URL you have provided could not be reached."
+msgstr ""
+
+#: ../interfaces.py:45
+msgid "The URL you have provided could not be reached. Please verify the URL is correct and that the network location is reachable."
+msgstr ""
+
+#: ../interfaces.py:34
+msgid "The value is not of the correct format"
+msgstr ""
+
+#: ../interfaces.py:26
+msgid "This time cannot be greater than current time"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:174
+msgid "This will return objects containing 'word1' and 'word2' or just objects that contain the term 'word3'."
+msgstr ""
+
+#. Default: "This will search for all objects that contain both 'word1' and 'word2'."
+#: ../browser/templates/search_view.pt:163
+msgid "This will search for all objects that contain both 'word1' and 'word2'. "
+msgstr ""
+
+#: ../interfaces.py:180
+#: ../models/Tumour.xml
+msgid "Treatment"
+msgstr ""
+
+#: ../interfaces.py:177
+#: ../models/Tumour.xml
+msgid "Treatment situation"
+msgstr ""
+
+#: ../profiles/default/types/Tumour.xml
+msgid "Tumour"
+msgstr ""
+
+#: ../interfaces.py:589
+msgid "UUID"
+msgstr ""
+
+#: ../configure.zcml:44
+msgid "Uninstalls the gene.tumour add-on."
+msgstr ""
+
+#: ../interfaces.py:101
+msgid "User group"
+msgstr ""
+
+#: ../interfaces.py:97
+msgid "User search filter"
+msgstr ""
+
+#: ../interfaces.py:98
+msgid "User search filter additional conditions"
+msgstr ""
+
+#: ../interfaces.py:106
+msgid "Users search additional filtering criteria. Reference usage: Advanced search instructions"
+msgstr ""
+
+#: gene/tumour/browser/import.py
+msgid "ValidationError"
+msgstr ""
+
+#: gene/tumour/browser/import.py
+msgid "Value is too big"
+msgstr ""
+
+#: ../browser/import.py:311
+msgid "ValuesError: ${sample_title} ${sample_value} already exist; "
+msgstr ""
+
+#: ../browser/import.py:290
+msgid "ValuesError: ${sample_title} ${sample_value} are not unique; "
+msgstr ""
+
+#: ../browser/import.py:375
+msgid "ValuesError: ${sample_title} ${sample_value} does't exist; "
+msgstr ""
+
+#: ../handlers.py:94
+msgid "Warn"
+msgstr ""
+
+#: ../interfaces.py:91
+msgid "When the entry has expired, send an email message to inform the user"
+msgstr ""
+
+#: ../browser/form.py:566
+#: ../interfaces.py:1227
+msgid "Workflow state transition"
+msgstr ""
+
+#: gene/tumour/browser/import.py
+msgid "Wrong contained type"
+msgstr ""
+
+#: ../interfaces.py:69
+msgid "You need to send the text."
+msgstr ""
+
+#: ../handlers.py:96
+msgid "[${warn}] [Tumour] ${count} items Expiration Notification"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:395
+msgid "actions"
+msgstr ""
+
+#: ../vocabulary.py:29
+msgid "cfDNA"
+msgstr ""
+
+#: ../vocabulary.py:33
+msgid "cfDNA\RNA"
+msgstr ""
+
+#. Default: "<strong>N</strong> Items will be permanently deleted! Deleted cannot be recovered."
+#: ../browser/templates/search_view.pt:500
+msgid "delete-warning"
+msgstr ""
+
+#. Default: "View"
+#: ../profiles/default/types/Tumour.xml
+msgid "description"
+msgstr ""
+
+#. Default: "<strong class=\"_total\">N</strong> items selected, <strong class=\"_same\">N</strong> same library barcode: <br /><span class=\"_bar\"></span>"
+#: ../browser/templates/search_view.pt:530
+msgid "dilution-confirm"
+msgstr ""
+
+#: ../browser/templates/import.pt:59
+msgid "download"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:103
+msgid "end date"
+msgstr ""
+
+#: ../vocabulary.py:30
+msgid "gDNA"
+msgstr ""
+
+#: ../vocabulary.py:32
+msgid "gDNA\RNA"
+msgstr ""
+
+#: ../browser/configure.zcml:36
+msgid "gene tumour search data"
+msgstr ""
+
+#: ../browser/configure.zcml:26
+msgid "gene tumour search view"
+msgstr ""
+
+#: ../configure.zcml:34
+msgid "gene.tumour"
+msgstr ""
+
+#: ../configure.zcml:44
+msgid "gene.tumour (uninstall)"
+msgstr ""
+
+#. Default: "Enter a comment that describes the changes you made."
+#: ../interfaces.py:1050
+msgid "help_change_note"
+msgstr ""
+
+#. Default: "Cancel"
+#: ../browser/templates/import.pt:84
+msgid "label_cancel"
+msgstr ""
+
+#. Default: "Change Note"
+#: ../interfaces.py:1049
+msgid "label_change_note"
+msgstr ""
+
+#. Default: "Import"
+#: ../browser/templates/import.pt:89
+msgid "label_import"
+msgstr ""
+
+#: ../vocabulary.py:100
+msgid "name"
+msgstr ""
+
+#: ../browser/form.py:124
+msgid "operation cancelled"
+msgstr ""
+
+#: ../browser/search_view.py:189
+msgid "result"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:97
+msgid "start date"
+msgstr ""
+
+#: ../vocabulary.py:109
+msgid "step1"
+msgstr ""
+
+#: ../vocabulary.py:110
+msgid "step2"
+msgstr ""
+
+#: ../vocabulary.py:111
+msgid "step3"
+msgstr ""
+
+#: ../vocabulary.py:112
+msgid "step4"
+msgstr ""
+
+#: ../vocabulary.py:113
+msgid "step5"
+msgstr ""
+
+#: ../browser/import.py:389
+msgid "steps"
+msgstr ""
+
+#. Default: "duration:${time_to_duration}"
+#: ../browser/templates/import.pt:125
+msgid "time-report"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:185
+msgid "which returns all words that begin with 'Z'"
+msgstr ""
+
+#: ../browser/templates/search_view.pt:187
+msgid "which returns all words that begin with 'Zop' and have one more character - just like in a Un*x shell."
+msgstr ""
+
+#: ../browser/templates/search_view.pt:165
+msgid "which would search for occurrences of 'word1' but would exclude documents which contain 'word2'."
+msgstr ""
+
+#: ../browser/templates/search_view.pt:212
+msgid "will return all objects that contain the terms 'bob' and 'uncle' but will not include any objects that contain words that start with 'Zoo' like 'Zoologist', 'Zoology', or 'Zoo' itself."
+msgstr ""
+
+#: ../browser/templates/search_view.pt:216
+msgid "will return all objects which contain the word 'snakes' or 'frogs' but do not contain the phrase 'carpet python'."
+msgstr ""
+
+#: ../browser/templates/search_view.pt:205
+msgid "will search for all occurrences of the phrase 'carpet python' or of the word 'frogs'"
+msgstr ""

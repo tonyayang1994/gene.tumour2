@@ -1,0 +1,35 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  i18n_domain="gene.tumour">
+
+  <utility
+    component=".vocabulary.treatment_situation"
+    name="gene.tumour.vocabulary.treatment_situation"
+  />
+
+  <utility
+    factory=".vocabulary.NATypes"
+    name="gene.tumour.vocabulary.na_types"
+  />
+
+  <utility
+    component=".vocabulary.analysis_result"
+    name="gene.tumour.vocabulary.analysis_result"
+  />
+
+  <utility
+    component=".vocabulary.progress_steps"
+    name="gene.tumour.vocabulary.progress_steps"
+  />
+
+  <utility
+    factory=".vocabulary.RedoSteps"
+    name="gene.tumour.vocabulary.redo_steps"
+  />
+
+  <utility
+    factory=".vocabulary.ReviewStates"
+    name="gene.tumour.vocabulary.review_states"
+  />
+
+</configure>

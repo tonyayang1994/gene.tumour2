@@ -1,0 +1,32 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:zcml="http://namespaces.zope.org/zcml">
+
+  <subscriber
+    for="gene.tumour.interfaces.ITumour
+       zope.lifecycleevent.interfaces.IObjectAddedEvent"
+    handler=".subscribers.set_gid"
+  />
+
+  <subscriber
+    for="gene.tumour.interfaces.ITumour
+       zope.lifecycleevent.interfaces.IObjectAddedEvent"
+    handler=".subscribers.set_title_text"
+  />
+  <subscriber
+    for="gene.tumour.interfaces.ITumour
+       zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+    handler=".subscribers.set_title_text"
+  />
+
+  <subscriber
+    for="gene.tumour.interfaces.IStepsChangedEvent"
+    handler=".subscribers.steps_changed"
+  />
+
+  <subscriber
+    zcml:condition="installed gene.sms"
+    for="Products.CMFCore.interfaces.IActionSucceededEvent"
+    handler=".handlers.workflow_action"
+  />
+
+</configure>
