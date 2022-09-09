@@ -4,6 +4,7 @@ import logging
 
 from AccessControl import Unauthorized
 from collective.z3cform.datagridfield import DataGridFieldFactory
+from collective.z3cform.datagridfield import BlockDataGridFieldFactory
 from gene.common.utils import make_folder
 from gene.tumour import _
 from gene.tumour import utils
@@ -47,6 +48,7 @@ class BloodSampleAddForm(form.AddForm):
     def __init__(self, context, request):
         super(BloodSampleAddForm, self).__init__(context, request)
         self.request['disable_border'] = True
+        self.request.set('disable_plone.leftcolumn',1)
         self.items = []
 
     _add_permission = 'gene.tumour: Add BloodSample'
@@ -57,7 +59,7 @@ class BloodSampleAddForm(form.AddForm):
     prefix = 'form.tumour.sample.add'
 
     fields = field.Fields(IBloodSampleAddList)
-    fields['batch_list'].widgetFactory = DataGridFieldFactory
+    fields['batch_list'].widgetFactory = BlockDataGridFieldFactory
 
     def getContent(self):
         data = {'batch_list': []}
@@ -162,6 +164,7 @@ class BloodSampleEditForm(form.EditForm):
     def __init__(self, context, request):
         super(BloodSampleEditForm, self).__init__(context, request)
         self.request['disable_border'] = True
+        self.request.set('disable_plone.leftcolumn',1)
         self.items = []
         self.new_steps = ''
         self.view_edit_mode = None
