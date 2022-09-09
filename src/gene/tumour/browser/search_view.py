@@ -8,6 +8,7 @@ from DateTime import DateTime
 from Products.CMFPlone.utils import safe_unicode
 from gene.common.utils import date_handler
 from gene.tumour import _
+from gene.common.utils import DateTime2localTime
 from gene.tumour import utils
 from gene.tumour.vocabulary import situation_dict, result_dict
 from plone import api
@@ -22,7 +23,7 @@ logger = logging.getLogger(__name__)
 
 
 class SearchView(BrowserView):
-    
+
     def __init__(self, context, request):
 
         self.context = context
@@ -174,10 +175,8 @@ class SearchView(BrowserView):
                                     self.download_url(obj, name)]
                 else:
                     record[name] = getattr(obj, name, None)
-            record['created'] = api.portal.get_localized_time(
-                obj.created(), long_format=True)
-            record['modified'] = api.portal.get_localized_time(
-                obj.modified(), long_format=True)
+            record['created'] = DateTime2localTime(obj.created())
+            record['modified'] = DateTime2localTime(obj.modified())
             record['report'] = getattr(obj.aq_explicit, 'report', None)
             record['url'] = obj.absolute_url_path()
             state = api.content.get_state(obj)
