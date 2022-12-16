@@ -81,6 +81,8 @@ class ExportExcel(BrowserView):
             for col, name in enumerate(utils.fields_name()):
                 if not can_review and name in fields_review:
                     value = ''
+                elif name == "result_file":
+                    value = ''
                 else:
                     value = getattr(real_object, name, None)
                     if value and isinstance(value, datetime.date):
